@@ -1,0 +1,12 @@
+@import "_header";
+@import "sec-user";
+@import "_footer";
+body {
+  background: #cceef2;
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,39 @@
+.sec-user {
+  .name {
+    a {
+      &:hover {
+        color: #0bb783 !important;
+      }
+    }
+  }
+  .row {
+    div {
+      .icon {
+        &:hover {
+          background: silver;
+          i {
+            color: #0bb783 !important;
+          }
+        }
+      }
+    }
+  }
+  .header-btn {
+    span {
+      a {
+        &:hover {
+          color: #0bb783 !important;
+        }
+      }
+    }
+  }
+}
+.list-unstyled {
+  li {
+    .user-hover {
+      &:hover {
+        color: #0bb783 !important;
+      }
+    }
+  }
+}

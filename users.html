@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/user.css" />
+  </head>
+  <body>
+    <header class="bg-header">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light bg-header">
+        <div class="container-fluid bg-header px-5">
+          <a
+            class="navbar-brand text-white fs-5 fw-normal nav-color"
+            aria-current="page"
+            href="#"
+            >Dashboard</a
+          >
+          <button
+            class="navbar-toggler bg-white"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse container"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item mx-4">
+                <a
+                  class="nav-link text-white fs-5 fw-normal nav-color"
+                  aria-current="page"
+                  href="#"
+                  >Features</a
+                >
+              </li>
+              <li class="nav-item mx-4">
+                <a class="nav-link text-white fs-5 fw-normal nav-color" href="#"
+                  >Builder</a
+                >
+              </li>
+              <li class="nav-item mx-4 dropdown">
+                <a
+                  class="nav-link text-white fs-5 fw-normal nav-color dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Apps
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item mx-4">
+                <a
+                  class="nav-link text-white fs-5 fw-normal"
+                  href="#"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >Pages</a
+                >
+              </li>
+            </ul>
+            <ul class="icons-menu d-flex mt-3">
+              <li class="icons mx-1 mt-2">
+                <a href="#!" class="a-icon p-2 rounded"
+                  ><i class="fas fs-5 fa-search text-white-50"></i
+                ></a>
+              </li>
+              <li class="icons mx-1 mt-2">
+                <a href="#!" class="a-icon p-2 rounded"
+                  ><i class="fas fs-5 fa-signal text-white-50"></i
+                ></a>
+              </li>
+              <li class="icons mx-1 mt-2">
+                <a href="#!" class="a-icon p-2 rounded"
+                  ><i class="fas fs-5 fa-bars text-white-50"></i
+                ></a>
+              </li>
+              <li class="icons mx-1 mt-2">
+                <a href="#!" class="a-icon p-2 rounded"
+                  ><i class="far fs-5 fa-comment-alt text-white-50"></i
+                ></a>
+              </li>
+              <li class="icons mx-1 mt-2">
+                <a href="#!" class="a-icon p-2 rounded"
+                  ><i class="fas fs-5 fa-user text-white-50"></i
+                ></a>
+              </li>
+              <li>
+                <button
+                  class="btn btn-md rounded-pill creat-btn me-5"
+                  type="submit"
+                >
+                  Creat New
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="subheader bg-white pe-5">
+      <div class="d-flex container flex-wrap flex-sm-nowrap">
+        <div class="d-none d-lg-flex align-items-center flex-wrap">
+          <a href="#"
+            ><img
+              class="subheader-logo"
+              src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/logos/logo-4.svg"
+              alt=""
+          /></a>
+        </div>
+        <div class="d-flex sec-1">
+          <span class="p-4 text-center subheader-span">
+            <h4 class="text-dark fw-bold fs-4 mb-1">My Account</h4>
+            <h2 class="text-secondary fs-6">Profile & Account</h2>
+          </span>
+          <div class="divider bg-secondary my-auto"></div>
+          <span class="p-4 text-center subheader-span">
+            <h4 class="text-dark fw-bold fs-4 mb-1">Orders</h4>
+            <h2 class="text-secondary fs-6">My Order List</h2>
+          </span>
+          <div class="divider bg-secondary my-auto"></div>
+          <span class="p-4 text-center subheader-span">
+            <h4 class="text-dark fw-bold fs-4 mb-1">Deposits</h4>
+            <h2 class="text-secondary fs-6">Account & Reports</h2>
+          </span>
+          <div class="divider bg-secondary my-auto"></div>
+          <span class="p-4 text-center subheader-span">
+            <h4 class="text-dark fw-bold fs-4 mb-1">Transfers</h4>
+            <h2 class="text-secondary fs-6">Transactions History</h2>
+          </span>
+          <div class="divider bg-secondary my-auto"></div>
+          <span class="p-4 text-center subheader-span">
+            <h4 class="text-dark fw-bold fs-4 mb-1">Statements</h4>
+            <h2 class="text-secondary fs-6">Dashboard & Reports</h2>
+          </span>
+        </div>
+      </div>
+    </div>
+    <section class="sec-user container mt-4">
+      <div class="header-btn d-lg-flex justify-content-between">
+        <span class="d-flex">
+          <h3 class="text-dark fs-4">List 3 Columns</h3>
+          <a class="text-secondary mt-2 mx-2" href="#!">Apps</a>
+          <a class="text-secondary mt-2 mx-2" href="#!">Users</a>
+          <a class="text-secondary mt-2 mx-2" href="#!">List - Columns 1</a>
+        </span>
+        <span>
+          <button class="btn bg-white text-secondary fw-bold fs-6 px-5 me-3">
+            <svg
+              class="me-2"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="24px"
+              height="24px"
+              viewBox="0 0 24 24"
+              version="1.1"
+            >
+              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <polygon points="0 0 24 0 24 24 0 24"></polygon>
+                <path
+                  d="M18,8 L16,8 C15.4477153,8 15,7.55228475 15,7 C15,6.44771525 15.4477153,6 16,6 L18,6 L18,4 C18,3.44771525 18.4477153,3 19,3 C19.5522847,3 20,3.44771525 20,4 L20,6 L22,6 C22.5522847,6 23,6.44771525 23,7 C23,7.55228475 22.5522847,8 22,8 L20,8 L20,10 C20,10.5522847 19.5522847,11 19,11 C18.4477153,11 18,10.5522847 18,10 L18,8 Z M9,11 C6.790861,11 5,9.209139 5,7 C5,4.790861 6.790861,3 9,3 C11.209139,3 13,4.790861 13,7 C13,9.209139 11.209139,11 9,11 Z"
+                  fill="#000000"
+                  fill-rule="nonzero"
+                  opacity="0.3"
+                ></path>
+                <path
+                  d="M0.00065168429,20.1992055 C0.388258525,15.4265159 4.26191235,13 8.98334134,13 C13.7712164,13 17.7048837,15.2931929 17.9979143,20.2 C18.0095879,20.3954741 17.9979143,21 17.2466999,21 C13.541124,21 8.03472472,21 0.727502227,21 C0.476712155,21 -0.0204617505,20.45918 0.00065168429,20.1992055 Z"
+                  fill="#000000"
+                  fill-rule="nonzero"
+                ></path>
+              </g>
+            </svg>
+            Add Member
+          </button>
+          <button class="btn bg-success text-white fw-bold fs-6 px-5">
+            <svg
+              class="me-2"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="24px"
+              height="24px"
+              viewBox="0 0 24 24"
+              version="1.1"
+            >
+              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <polygon points="0 0 24 0 24 24 0 24"></polygon>
+                <path
+                  d="M5.85714286,2 L13.7364114,2 C14.0910962,2 14.4343066,2.12568431 14.7051108,2.35473959 L19.4686994,6.3839416 C19.8056532,6.66894833 20,7.08787823 20,7.52920201 L20,20.0833333 C20,21.8738751 19.9795521,22 18.1428571,22 L5.85714286,22 C4.02044787,22 4,21.8738751 4,20.0833333 L4,3.91666667 C4,2.12612489 4.02044787,2 5.85714286,2 Z"
+                  fill="#000000"
+                  fill-rule="nonzero"
+                  opacity="0.3"
+                ></path>
+                <rect
+                  fill="#000000"
+                  x="6"
+                  y="11"
+                  width="9"
+                  height="2"
+                  rx="1"
+                ></rect>
+                <rect
+                  fill="#000000"
+                  x="6"
+                  y="15"
+                  width="5"
+                  height="2"
+                  rx="1"
+                ></rect>
+              </g>
+            </svg>
+            New Report
+          </button>
+        </span>
+      </div>
+      <div class="row mt-4">
+        <div class="col-sm-6 col-lg-6 col-xl-6 col-xxl-3 bg-white p-4 columns">
+          <span class="d-flex justify-content-end"
+            ><a href="#!" class="py-1 px-2 rounded icon"
+              ><i class="fas fa-ellipsis-h text-secondary fs-4"></i></a
+          ></span>
+          <span class="d-flex"
+            ><img
+              class="rounded-pill mb-2"
+              style="width: 100%; max-width: 75px; object-fit: cover"
+              src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/users/150-6.jpg"
+              alt=""
+            />
+            <span class="ms-2 mt-2 name">
+              <h4><a href="#!" class="text-dark fw-bold lh-1">Nick Bold</a></h4>
+              <p class="text-muted fw-bold lh-1">Head of Development</p>
+            </span>
+          </span>
+          <p class="py-2">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+          <ul class="list-unstyled">
+            <li class="text-muted d-flex mb-2">
+              <i class="fas fa-phone me-2 mt-1"></i>
+              <a class="fw-bold text-secondary">+438594572</a>
+            </li>
+            <li class="text-muted d-flex mb-2">
+              <i class="fas fa-envelope me-2 mt-1"></i>
+              <a href="#!" class="fw-bold text-secondary user-hover"
+                >mail@example.com</a
+              >
+            </li>
+            <li class="text-muted d-flex">
+              <i class="fas fa-map-marker-alt me-2 mt-1"></i>
+              <a href="#!" class="fw-bold text-secondary user-hover"
+                >Barcelona, Spain</a
+              >
+            </li>
+          </ul>
+          <div class="pt-2 d-flex">
+            <a href="#!" class="btn btn-success me-2 fw-bold">Contact</a>
+            <a href="#!" class="btn btn-success fw-bold">Profile</a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-xl-6 col-xxl-3 bg-white p-4">
+          <span class="d-flex justify-content-end"
+            ><a href="#!" class="py-1 px-2 rounded icon"
+              ><i class="fas fa-ellipsis-h text-secondary fs-4"></i></a
+          ></span>
+          <span class="d-flex"
+            ><img
+              class="rounded-pill mb-2"
+              style="width: 100%; max-width: 75px; object-fit: cover"
+              src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/users/150-6.jpg"
+              alt=""
+            />
+            <span class="ms-2 mt-2 name">
+              <h4><a href="#!" class="text-dark fw-bold lh-1">Nick Bold</a></h4>
+              <p class="text-muted fw-bold lh-1">Head of Development</p>
+            </span>
+          </span>
+          <p class="py-2">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+          <ul class="list-unstyled">
+            <li class="text-muted d-flex mb-2">
+              <i class="fas fa-phone me-2 mt-1"></i>
+              <a class="fw-bold text-secondary">+438594572</a>
+            </li>
+            <li class="text-muted d-flex mb-2">
+              <i class="fas fa-envelope me-2 mt-1"></i>
+              <a href="#!" class="fw-bold text-secondary user-hover"
+                >mail@example.com</a
+              >
+            </li>
+            <li class="text-muted d-flex">
+              <i class="fas fa-map-marker-alt me-2 mt-1"></i>
+              <a href="#!" class="fw-bold text-secondary user-hover"
+                >Barcelona, Spain</a
+              >
+            </li>
+          </ul>
+          <div class="pt-2 d-flex">
+            <a href="#!" class="btn btn-success me-2 fw-bold">Contact</a>
+            <a href="#!" class="btn btn-success fw-bold">Profile</a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-6 col-xl-6 col-xxl-3 bg-white p-4 columns">
+          <span class="d-flex justify-content-end"
+            ><a href="#!" class="py-1 px-2 rounded icon"
+              ><i class="fas fa-ellipsis-h text-secondary fs-4"></i></a
+          ></span>
+          <span class="d-flex"
+            ><img
+              class="rounded-pill mb-2"
+              style="width: 100%; max-width: 75px; object-fit: cover"
+              src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/users/150-6.jpg"
+              alt=""
+            />
+            <span class="ms-2 mt-2 name">
+              <h4><a href="#!" class="text-dark fw-bold lh-1">Nick Bold</a></h4>
+              <p class="text-muted fw-bold lh-1">Head of Development</p>
+            </span>
+          </span>
+          <p class="py-2">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+          <ul class="list-unstyled">
+            <li class="text-muted d-flex mb-2">
+              <i class="fas fa-phone me-2 mt-1"></i>
+              <a class="fw-bold text-secondary">+438594572</a>
+            </li>
+            <li class="text-muted d-flex mb-2">
+              <i class="fas fa-envelope me-2 mt-1"></i>
+              <a href="#!" class="fw-bold text-secondary user-hover"
+                >mail@example.com</a
+              >
+            </li>
+            <li class="text-muted d-flex">
+              <i class="fas fa-map-marker-alt me-2 mt-1"></i>
+              <a href="#!" class="fw-bold text-secondary user-hover"
+                >Barcelona, Spain</a
+              >
+            </li>
+          </ul>
+          <div class="pt-2 d-flex">
+            <a href="#!" class="btn btn-success me-2 fw-bold">Contact</a>
+            <a href="#!" class="btn btn-success fw-bold">Profile</a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-6 col-xl-6 col-xxl-3 bg-white p-4 columns">
+          <span class="d-flex justify-content-end"
+            ><a href="#!" class="py-1 px-2 rounded icon"
+              ><i class="fas fa-ellipsis-h text-secondary fs-4"></i></a
+          ></span>
+          <span class="d-flex"
+            ><img
+              class="rounded-pill mb-2"
+              style="width: 100%; max-width: 75px; object-fit: cover"
+              src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/users/150-6.jpg"
+              alt=""
+            />
+            <span class="ms-2 mt-2 name">
+              <h4><a href="#!" class="text-dark fw-bold lh-1">Nick Bold</a></h4>
+              <p class="text-muted fw-bold lh-1">Head of Development</p>
+            </span>
+          </span>
+          <p class="py-2">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+          <ul class="list-unstyled">
+            <li class="text-muted d-flex mb-2">
+              <i class="fas fa-phone me-2 mt-1"></i>
+              <a class="fw-bold text-secondary">+438594572</a>
+            </li>
+            <li class="text-muted d-flex mb-2">
+              <i class="fas fa-envelope me-2 mt-1"></i>
+              <a href="#!" class="fw-bold text-secondary user-hover"
+                >mail@example.com</a
+              >
+            </li>
+            <li class="text-muted d-flex">
+              <i class="fas fa-map-marker-alt me-2 mt-1"></i>
+              <a href="#!" class="fw-bold text-secondary user-hover"
+                >Barcelona, Spain</a
+              >
+            </li>
+          </ul>
+          <div class="pt-2 d-flex">
+            <a href="#!" class="btn btn-success me-2 fw-bold">Contact</a>
+            <a href="#!" class="btn btn-success fw-bold">Profile</a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-6 col-xl-6 col-xxl-3 bg-white p-4 columns">
+          <span class="d-flex justify-content-end"
+            ><a href="#!" class="py-1 px-2 rounded icon"
+              ><i class="fas fa-ellipsis-h text-secondary fs-4"></i></a
+          ></span>
+          <span class="d-flex"
+            ><img
+              class="rounded-pill mb-2"
+              style="width: 100%; max-width: 75px; object-fit: cover"
+              src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/users/150-6.jpg"
+              alt=""
+            />
+            <span class="ms-2 mt-2 name">
+              <h4><a href="#!" class="text-dark fw-bold lh-1">Nick Bold</a></h4>
+              <p class="text-muted fw-bold lh-1">Head of Development</p>
+            </span>
+          </span>
+          <p class="py-2">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+          <ul class="list-unstyled">
+            <li class="text-muted d-flex mb-2">
+              <i class="fas fa-phone me-2 mt-1"></i>
+              <a class="fw-bold text-secondary">+438594572</a>
+            </li>
+            <li class="text-muted d-flex mb-2">
+              <i class="fas fa-envelope me-2 mt-1"></i>
+              <a href="#!" class="fw-bold text-secondary user-hover"
+                >mail@example.com</a
+              >
+            </li>
+            <li class="text-muted d-flex">
+              <i class="fas fa-map-marker-alt me-2 mt-1"></i>
+              <a href="#!" class="fw-bold text-secondary user-hover"
+                >Barcelona, Spain</a
+              >
+            </li>
+          </ul>
+          <div class="pt-2 d-flex">
+            <a href="#!" class="btn btn-success me-2 fw-bold">Contact</a>
+            <a href="#!" class="btn btn-success fw-bold">Profile</a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-6 col-xl-6 col-xxl-3 bg-white p-4 columns">
+          <span class="d-flex justify-content-end"
+            ><a href="#!" class="py-1 px-2 rounded icon"
+              ><i class="fas fa-ellipsis-h text-secondary fs-4"></i></a
+          ></span>
+          <span class="d-flex"
+            ><img
+              class="rounded-pill mb-2"
+              style="width: 100%; max-width: 75px; object-fit: cover"
+              src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/users/150-6.jpg"
+              alt=""
+            />
+            <span class="ms-2 mt-2 name">
+              <h4><a href="#!" class="text-dark fw-bold lh-1">Nick Bold</a></h4>
+              <p class="text-muted fw-bold lh-1">Head of Development</p>
+            </span>
+          </span>
+          <p class="py-2">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+          <ul class="list-unstyled">
+            <li class="text-muted d-flex mb-2">
+              <i class="fas fa-phone me-2 mt-1"></i>
+              <a class="fw-bold text-secondary">+438594572</a>
+            </li>
+            <li class="text-muted d-flex mb-2">
+              <i class="fas fa-envelope me-2 mt-1"></i>
+              <a href="#!" class="fw-bold text-secondary user-hover"
+                >mail@example.com</a
+              >
+            </li>
+            <li class="text-muted d-flex">
+              <i class="fas fa-map-marker-alt me-2 mt-1"></i>
+              <a href="#!" class="fw-bold text-secondary user-hover"
+                >Barcelona, Spain</a
+              >
+            </li>
+          </ul>
+          <div class="pt-2 d-flex">
+            <a href="#!" class="btn btn-success me-2 fw-bold">Contact</a>
+            <a href="#!" class="btn btn-success fw-bold">Profile</a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-6 col-xl-6 col-xxl-3 bg-white p-4 columns">
+          <span class="d-flex justify-content-end"
+            ><a href="#!" class="py-1 px-2 rounded icon"
+              ><i class="fas fa-ellipsis-h text-secondary fs-4"></i></a
+          ></span>
+          <span class="d-flex"
+            ><img
+              class="rounded-pill mb-2"
+              style="width: 100%; max-width: 75px; object-fit: cover"
+              src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/users/150-6.jpg"
+              alt=""
+            />
+            <span class="ms-2 mt-2 name">
+              <h4><a href="#!" class="text-dark fw-bold lh-1">Nick Bold</a></h4>
+              <p class="text-muted fw-bold lh-1">Head of Development</p>
+            </span>
+          </span>
+          <p class="py-2">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+          <ul class="list-unstyled">
+            <li class="text-muted d-flex mb-2">
+              <i class="fas fa-phone me-2 mt-1"></i>
+              <a class="fw-bold text-secondary">+438594572</a>
+            </li>
+            <li class="text-muted d-flex mb-2">
+              <i class="fas fa-envelope me-2 mt-1"></i>
+              <a href="#!" class="fw-bold text-secondary user-hover"
+                >mail@example.com</a
+              >
+            </li>
+            <li class="text-muted d-flex">
+              <i class="fas fa-map-marker-alt me-2 mt-1"></i>
+              <a href="#!" class="fw-bold text-secondary user-hover"
+                >Barcelona, Spain</a
+              >
+            </li>
+          </ul>
+          <div class="pt-2 d-flex">
+            <a href="#!" class="btn btn-success me-2 fw-bold">Contact</a>
+            <a href="#!" class="btn btn-success fw-bold">Profile</a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-6 col-xl-6 col-xxl-3 bg-white p-4 columns">
+          <span class="d-flex justify-content-end"
+            ><a href="#!" class="py-1 px-2 rounded icon"
+              ><i class="fas fa-ellipsis-h text-secondary fs-4"></i></a
+          ></span>
+          <span class="d-flex"
+            ><img
+              class="rounded-pill mb-2"
+              style="width: 100%; max-width: 75px; object-fit: cover"
+              src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/users/150-6.jpg"
+              alt=""
+            />
+            <span class="ms-2 mt-2 name">
+              <h4><a href="#!" class="text-dark fw-bold lh-1">Nick Bold</a></h4>
+              <p class="text-muted fw-bold lh-1">Head of Development</p>
+            </span>
+          </span>
+          <p class="py-2">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+          <ul class="list-unstyled">
+            <li class="text-muted d-flex mb-2">
+              <i class="fas fa-phone me-2 mt-1"></i>
+              <a class="fw-bold text-secondary">+438594572</a>
+            </li>
+            <li class="text-muted d-flex mb-2">
+              <i class="fas fa-envelope me-2 mt-1"></i>
+              <a href="#!" class="fw-bold text-secondary user-hover"
+                >mail@example.com</a
+              >
+            </li>
+            <li class="text-muted d-flex">
+              <i class="fas fa-map-marker-alt me-2 mt-1"></i>
+              <a href="#!" class="fw-bold text-secondary user-hover"
+                >Barcelona, Spain</a
+              >
+            </li>
+          </ul>
+          <div class="pt-2 d-flex">
+            <a href="#!" class="btn btn-success me-2 fw-bold">Contact</a>
+            <a href="#!" class="btn btn-success fw-bold">Profile</a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-6 col-xl-6 col-xxl-3 bg-white p-4 columns">
+          <span class="d-flex justify-content-end"
+            ><a href="#!" class="py-1 px-2 rounded icon"
+              ><i class="fas fa-ellipsis-h text-secondary fs-4"></i></a
+          ></span>
+          <span class="d-flex"
+            ><img
+              class="rounded-pill mb-2"
+              style="width: 100%; max-width: 75px; object-fit: cover"
+              src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/users/150-6.jpg"
+              alt=""
+            />
+            <span class="ms-2 mt-2 name">
+              <h4><a href="#!" class="text-dark fw-bold lh-1">Nick Bold</a></h4>
+              <p class="text-muted fw-bold lh-1">Head of Development</p>
+            </span>
+          </span>
+          <p class="py-2">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+          <ul class="list-unstyled">
+            <li class="text-muted d-flex mb-2">
+              <i class="fas fa-phone me-2 mt-1"></i>
+              <a class="fw-bold text-secondary">+438594572</a>
+            </li>
+            <li class="text-muted d-flex mb-2">
+              <i class="fas fa-envelope me-2 mt-1"></i>
+              <a href="#!" class="fw-bold text-secondary user-hover"
+                >mail@example.com</a
+              >
+            </li>
+            <li class="text-muted d-flex">
+              <i class="fas fa-map-marker-alt me-2 mt-1"></i>
+              <a href="#!" class="fw-bold text-secondary user-hover"
+                >Barcelona, Spain</a
+              >
+            </li>
+          </ul>
+          <div class="pt-2 d-flex">
+            <a href="#!" class="btn btn-success me-2 fw-bold">Contact</a>
+            <a href="#!" class="btn btn-success fw-bold">Profile</a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-6 col-xl-6 col-xxl-3 bg-white p-4 columns">
+          <span class="d-flex justify-content-end"
+            ><a href="#!" class="py-1 px-2 rounded icon"
+              ><i class="fas fa-ellipsis-h text-secondary fs-4"></i></a
+          ></span>
+          <span class="d-flex"
+            ><img
+              class="rounded-pill mb-2"
+              style="width: 100%; max-width: 75px; object-fit: cover"
+              src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/users/150-6.jpg"
+              alt=""
+            />
+            <span class="ms-2 mt-2 name">
+              <h4><a href="#!" class="text-dark fw-bold lh-1">Nick Bold</a></h4>
+              <p class="text-muted fw-bold lh-1">Head of Development</p>
+            </span>
+          </span>
+          <p class="py-2">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+          <ul class="list-unstyled">
+            <li class="text-muted d-flex mb-2">
+              <i class="fas fa-phone me-2 mt-1"></i>
+              <a class="fw-bold text-secondary">+438594572</a>
+            </li>
+            <li class="text-muted d-flex mb-2">
+              <i class="fas fa-envelope me-2 mt-1"></i>
+              <a href="#!" class="fw-bold text-secondary user-hover"
+                >mail@example.com</a
+              >
+            </li>
+            <li class="text-muted d-flex">
+              <i class="fas fa-map-marker-alt me-2 mt-1"></i>
+              <a href="#!" class="fw-bold text-secondary user-hover"
+                >Barcelona, Spain</a
+              >
+            </li>
+          </ul>
+          <div class="pt-2 d-flex">
+            <a href="#!" class="btn btn-success me-2 fw-bold">Contact</a>
+            <a href="#!" class="btn btn-success fw-bold">Profile</a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-6 col-xl-6 col-xxl-3 bg-white p-4 columns">
+          <span class="d-flex justify-content-end"
+            ><a href="#!" class="py-1 px-2 rounded icon"
+              ><i class="fas fa-ellipsis-h text-secondary fs-4"></i></a
+          ></span>
+          <span class="d-flex"
+            ><img
+              class="rounded-pill mb-2"
+              style="width: 100%; max-width: 75px; object-fit: cover"
+              src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/users/150-6.jpg"
+              alt=""
+            />
+            <span class="ms-2 mt-2 name">
+              <h4><a href="#!" class="text-dark fw-bold lh-1">Nick Bold</a></h4>
+              <p class="text-muted fw-bold lh-1">Head of Development</p>
+            </span>
+          </span>
+          <p class="py-2">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+          <ul class="list-unstyled">
+            <li class="text-muted d-flex mb-2">
+              <i class="fas fa-phone me-2 mt-1"></i>
+              <a class="fw-bold text-secondary">+438594572</a>
+            </li>
+            <li class="text-muted d-flex mb-2">
+              <i class="fas fa-envelope me-2 mt-1"></i>
+              <a href="#!" class="fw-bold text-secondary user-hover"
+                >mail@example.com</a
+              >
+            </li>
+            <li class="text-muted d-flex">
+              <i class="fas fa-map-marker-alt me-2 mt-1"></i>
+              <a href="#!" class="fw-bold text-secondary user-hover"
+                >Barcelona, Spain</a
+              >
+            </li>
+          </ul>
+          <div class="pt-2 d-flex">
+            <a href="#!" class="btn btn-success me-2 fw-bold">Contact</a>
+            <a href="#!" class="btn btn-success fw-bold">Profile</a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-6 col-xl-6 col-xxl-3 bg-white p-4 columns">
+          <span class="d-flex justify-content-end"
+            ><a href="#!" class="py-1 px-2 rounded icon"
+              ><i class="fas fa-ellipsis-h text-secondary fs-4"></i></a
+          ></span>
+          <span class="d-flex"
+            ><img
+              class="rounded-pill mb-2"
+              style="width: 100%; max-width: 75px; object-fit: cover"
+              src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/users/150-6.jpg"
+              alt=""
+            />
+            <span class="ms-2 mt-2 name">
+              <h4><a href="#!" class="text-dark fw-bold lh-1">Nick Bold</a></h4>
+              <p class="text-muted fw-bold lh-1">Head of Development</p>
+            </span>
+          </span>
+          <p class="py-2">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+          <ul class="list-unstyled">
+            <li class="text-muted d-flex mb-2">
+              <i class="fas fa-phone me-2 mt-1"></i>
+              <a class="fw-bold text-secondary">+438594572</a>
+            </li>
+            <li class="text-muted d-flex mb-2">
+              <i class="fas fa-envelope me-2 mt-1"></i>
+              <a href="#!" class="fw-bold text-secondary user-hover"
+                >mail@example.com</a
+              >
+            </li>
+            <li class="text-muted d-flex">
+              <i class="fas fa-map-marker-alt me-2 mt-1"></i>
+              <a href="#!" class="fw-bold text-secondary user-hover"
+                >Barcelona, Spain</a
+              >
+            </li>
+          </ul>
+          <div class="pt-2 d-flex">
+            <a href="#!" class="btn btn-success me-2 fw-bold">Contact</a>
+            <a href="#!" class="btn btn-success fw-bold">Profile</a>
+          </div>
+        </div>
+      </div>
+      <div class="d-lg-flex bg-white mt-3 rounded justify-content-between px-3">
+        <nav aria-label="Page navigation example ">
+          <ul class="pagination mb-0">
+            <li class="page-item m-2 rounded-pill">
+              <a
+                class="page-link bg-success text-white fw-bold fs-4 rounded"
+                href="#!"
+                aria-label="Previous"
+              >
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item m-2 rounded-pill">
+              <a
+                class="page-link bg-success text-white fw-bold fs-4 rounded"
+                href="#!"
+                >1</a
+              >
+            </li>
+            <li class="page-item m-2 rounded-pill">
+              <a
+                class="page-link bg-success text-white fw-bold fs-4 rounded"
+                href="#!"
+                >2</a
+              >
+            </li>
+            <li class="page-item m-2 rounded-pill">
+              <a
+                class="page-link bg-success text-white fw-bold fs-4 rounded"
+                href="#!"
+                >3</a
+              >
+            </li>
+            <li class="page-item m-2 rounded-pill">
+              <a
+                class="page-link bg-success text-white fw-bold fs-4 rounded"
+                href="#!"
+                aria-label="Next"
+              >
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <span class="d-flex mt-3">
+          <select
+            style="width: 80px"
+            class="form-select align-self-baseline bg-success text-white"
+            aria-label="Default select example"
+          >
+            <option selected>10</option>
+            <option value="1">25</option>
+            <option value="2">50</option>
+            <option value="3">75</option>
+          </select>
+          <p class="text-muted fs-5 ms-2">Showing 10 of 150 records</p>
+        </span>
+      </div>
+    </section>
+    <footer class="bg-white mt-3 pt-3">
+      <div class="d-lg-flex justify-content-between container">
+        <span class="d-flex fs-5"
+          ><p class="text-muted me-2">2021©</p>
+          <a href="#!" class="text-dark"> Keenthemes</a>
+        </span>
+        <span class="d-flex">
+          <a href="#!" class="text-muted me-4 fs-5">About</a>
+          <a href="#!" class="text-muted me-4 fs-5">Team</a>
+          <a href="#!" class="text-muted me-4 fs-5">Contact</a>
+        </span>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

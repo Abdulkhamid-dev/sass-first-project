@@ -1,0 +1,39 @@
+.table-span {
+  margin-top: 10px;
+  h3 {
+    line-height: 5px;
+  }
+  a {
+    &:hover {
+      color: #0bb783 !important;
+    }
+  }
+}
+table {
+  flex-wrap: wrap;
+  thead {
+    tr {
+      a {
+        &:hover {
+          color: #0bb783 !important;
+        }
+      }
+    }
+  }
+  h3 {
+    line-height: 5px;
+  }
+}
+.action {
+  span {
+    i {
+      cursor: pointer;
+    }
+    &:hover {
+      background: rgb(202, 198, 198);
+      i {
+        color: #0bb783 !important;
+      }
+    }
+  }
+}

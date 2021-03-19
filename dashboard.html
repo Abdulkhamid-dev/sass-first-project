@@ -1,0 +1,1452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
+      integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw=="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <script src="https://www.chartjs.org/samples/latest/utils.js"></script>
+    <script src="../../../dist/2.9.4/Chart.min.js"></script>
+  </head>
+  <body>
+    <header class="bg-header">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light bg-header">
+        <div class="container-fluid bg-header px-5">
+          <a
+            class="navbar-brand text-white fs-5 fw-normal nav-color d-lg-none"
+            aria-current="page"
+            href="#"
+            ><img
+              src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/logos/logo-4.svg"
+              alt=""
+          /></a>
+          <button
+            class="navbar-toggler bg-white"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse container"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item mx-4">
+                <a
+                  class="nav-link text-white fs-5 fw-normal nav-color"
+                  aria-current="page"
+                  href="#"
+                  >Dashboard</a
+                >
+              </li>
+              <li class="nav-item mx-4">
+                <a
+                  class="nav-link text-white fs-5 fw-normal nav-color"
+                  aria-current="page"
+                  href="#"
+                  >Features</a
+                >
+              </li>
+              <li class="nav-item mx-4">
+                <a class="nav-link text-white fs-5 fw-normal nav-color" href="#"
+                  >Builder</a
+                >
+              </li>
+              <li class="nav-item mx-4 dropdown">
+                <a
+                  class="nav-link text-white fs-5 fw-normal nav-color dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Apps
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item mx-4">
+                <a
+                  class="nav-link text-white fs-5 fw-normal"
+                  href="#"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >Pages</a
+                >
+              </li>
+            </ul>
+            <ul class="icons-menu d-flex mt-3">
+              <li class="icons mx-1 mt-2">
+                <a href="#!" class="a-icon p-2 rounded"
+                  ><i class="fas fs-5 fa-search text-white-50"></i
+                ></a>
+              </li>
+              <li class="icons mx-1 mt-2">
+                <a href="#!" class="a-icon p-2 rounded"
+                  ><i class="fas fs-5 fa-signal text-white-50"></i
+                ></a>
+              </li>
+              <li class="icons mx-1 mt-2">
+                <a href="#!" class="a-icon p-2 rounded"
+                  ><i class="fas fs-5 fa-bars text-white-50"></i
+                ></a>
+              </li>
+              <li class="icons mx-1 mt-2">
+                <a href="#!" class="a-icon p-2 rounded"
+                  ><i class="far fs-5 fa-comment-alt text-white-50"></i
+                ></a>
+              </li>
+              <li class="icons mx-1 mt-2">
+                <a href="#!" class="a-icon p-2 rounded"
+                  ><i class="fas fs-5 fa-user text-white-50"></i
+                ></a>
+              </li>
+              <li>
+                <button
+                  class="btn btn-md rounded-pill creat-btn me-5"
+                  type="submit"
+                >
+                  Creat New
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="subheader bg-white pe-5">
+      <div class="d-flex container flex-wrap flex-sm-nowrap">
+        <div class="d-none d-lg-flex align-items-center flex-wrap">
+          <a href="#"
+            ><img
+              class="subheader-logo"
+              src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/logos/logo-4.svg"
+              alt=""
+          /></a>
+        </div>
+        <div class="d-flex sec-1">
+          <span class="p-4 text-center subheader-span">
+            <h4 class="text-dark fw-bold fs-4 mb-1">My Account</h4>
+            <h2 class="text-secondary fs-6">Profile & Account</h2>
+          </span>
+          <div class="divider bg-secondary my-auto"></div>
+          <span class="p-4 text-center subheader-span">
+            <h4 class="text-dark fw-bold fs-4 mb-1">Orders</h4>
+            <h2 class="text-secondary fs-6">My Order List</h2>
+          </span>
+          <div class="divider bg-secondary my-auto"></div>
+          <span class="p-4 text-center subheader-span">
+            <h4 class="text-dark fw-bold fs-4 mb-1">Deposits</h4>
+            <h2 class="text-secondary fs-6">Account & Reports</h2>
+          </span>
+          <div class="divider bg-secondary my-auto"></div>
+          <span class="p-4 text-center subheader-span">
+            <h4 class="text-dark fw-bold fs-4 mb-1">Transfers</h4>
+            <h2 class="text-secondary fs-6">Transactions History</h2>
+          </span>
+          <div class="divider bg-secondary my-auto"></div>
+          <span class="p-4 text-center subheader-span">
+            <h4 class="text-dark fw-bold fs-4 mb-1">Statements</h4>
+            <h2 class="text-secondary fs-6">Dashboard & Reports</h2>
+          </span>
+        </div>
+      </div>
+    </div>
+    <section class="container row mx-auto mt-3">
+      <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-12 col-12 mt-3">
+        <div class="card rounded p-3 border border-0">
+          <div
+            class="card-header bg-white d-flex justify-content-between border border-0 align-items-center"
+          >
+            <span>
+              <h4 class="text-dark lh-1 fw-bold">Top Materials</h4>
+              <p class="text-muted lh-1 fw-bold">240,000 Total Sales</p>
+            </span>
+            <a href="#!" class="rounded quic-action"
+              ><i class="fas fa-ellipsis-h fw-bold p-1 text-success fs-5"></i
+            ></a>
+          </div>
+          <div class="card-body">
+            <span class="d-flex justify-content-between mb-2">
+              <span class="d-flex"
+                ><img
+                  width="25px"
+                  src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/svg/misc/006-plurk.svg"
+                  alt=""
+                />
+                <span class="ms-2">
+                  <h5 class="text-dark lh-1 fw-normal">Templates</h5>
+                  <p class="text-muted fw-normal lh-1">Front-end, Admin</p>
+                </span>
+              </span>
+              <span>
+                <p class="text-dark fw-normal mb-0">5.7k</p>
+                <span class="badge bg-danger rounded-pill text-white-50"
+                  >+780</span
+                >
+              </span>
+            </span>
+            <span class="d-flex justify-content-between mb-2">
+              <span class="d-flex"
+                ><img
+                  width="25px"
+                  src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/svg/misc/015-telegram.svg"
+                  alt=""
+                />
+                <span class="ms-2">
+                  <h5 class="text-dark lh-1 fw-normal">Wordpress</h5>
+                  <p class="text-muted fw-normal lh-1">eCommerce, Website</p>
+                </span>
+              </span>
+              <span>
+                <p class="text-dark fw-normal mb-0">8.7k</p>
+                <span class="badge bg-warning rounded-pill text-white-50"
+                  >+780</span
+                >
+              </span>
+            </span>
+            <span class="d-flex justify-content-between mb-2">
+              <span class="d-flex"
+                ><img
+                  width="25px"
+                  src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/svg/misc/003-puzzle.svg"
+                  alt=""
+                />
+                <span class="ms-2">
+                  <h5 class="text-dark lh-1 fw-normal">UI/UX Design</h5>
+                  <p class="text-muted fw-normal lh-1">Dashbards</p>
+                </span>
+              </span>
+              <span>
+                <p class="text-dark fw-normal mb-0">9.7k</p>
+                <span class="badge bg-dark rounded-pill text-white-50"
+                  >+780</span
+                >
+              </span>
+            </span>
+            <span class="d-flex justify-content-between mb-2">
+              <span class="d-flex"
+                ><img
+                  width="25px"
+                  src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/svg/misc/005-bebo.svg"
+                  alt=""
+                />
+                <span class="ms-2">
+                  <h5 class="text-dark lh-1 fw-normal">Sass Solution</h5>
+                  <p class="text-muted fw-normal lh-1">Python, Django</p>
+                </span>
+              </span>
+              <span>
+                <p class="text-dark fw-normal mb-0">5.7k</p>
+                <span class="badge bg-info rounded-pill text-white-50"
+                  >+780</span
+                >
+              </span>
+            </span>
+          </div>
+          <div class="card-footer bg-white border border-0">
+            <div id="canvas-holder" style="width: 100%">
+              <canvas id="myChart-2"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-12 col-12 mt-3">
+        <div class="card rounded p-3 border-0">
+          <div
+            class="card-header bg-white border border-0 d-flex justify-content-between align-items-center"
+          >
+            <span>
+              <h4 class="text-dark lh-1 fw-bold">Recent Posts</h4>
+              <p class="text-muted lh-1 fw-bold">Avarage +47%</p>
+            </span>
+            <a href="#!" class="rounded quic-action"
+              ><i class="fas fa-ellipsis-h fw-bold p-1 text-success fs-5"></i
+            ></a>
+          </div>
+          <div class="card-body">
+            <span class="d-flex align-items-center">
+              <img
+                style="object-fit: cover"
+                class="rounded me-2"
+                width="105px"
+                src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/stock-600x400/img-17.jpg"
+                alt=""
+              />
+              <span class="mt-3">
+                <h5 class="fs-5 lh-1">
+                  Quickly direct you to useful content or people
+                </h5>
+                <p class="text-muted fs-6 lh-1">HTML, CSS, JS</p>
+              </span>
+            </span>
+            <span class="d-flex align-items-center">
+              <img
+                style="object-fit: cover"
+                class="rounded me-2"
+                width="105px"
+                src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/stock-600x400/img-10.jpg"
+                alt=""
+              />
+              <span class="mt-3">
+                <h5 class="fs-5 lh-1">
+                  Quickly direct you to useful content or people
+                </h5>
+                <p class="text-muted fs-6 lh-1">HTML, CSS, JS</p>
+              </span>
+            </span>
+            <span class="d-flex align-items-center">
+              <img
+                style="object-fit: cover"
+                class="rounded me-2"
+                width="105px"
+                src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/stock-600x400/img-34.jpg"
+                alt=""
+              />
+              <span class="mt-3">
+                <h5 class="fs-5 lh-1">
+                  Quickly direct you to useful content or people
+                </h5>
+                <p class="text-muted fs-6 lh-1">HTML, CSS, JS</p>
+              </span>
+            </span>
+            <span class="d-flex align-items-center">
+              <img
+                style="object-fit: cover"
+                class="rounded me-2"
+                width="105px"
+                src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/stock-600x400/img-1.jpg"
+                alt=""
+              />
+              <span class="mt-3">
+                <h5 class="fs-5 lh-1">
+                  Quickly direct you to useful content or people
+                </h5>
+                <p class="text-muted fs-6 lh-1">HTML, CSS, JS</p>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-12 col-12 mt-3">
+        <div class="card p-3 border-0">
+          <div class="card-body">
+            <span class="d-flex align-items-center">
+              <span class="date me-3">
+                <p class="fw-bold">08</p>
+                <p class="fw-bold">DEC</p>
+              </span>
+              <span>
+                <h5 class="lh-1">AirGreat Presentation</h5>
+                <p class="lh-1">Oxford Street</p>
+              </span>
+            </span>
+            <p class="pt-4 mb-1">
+              To start a blog, think of a topic about and first brainstorm ways
+              to write details
+            </p>
+          </div>
+          <div
+            class="card-footer bg-white d-flex justify-content-between align-items-center"
+          >
+            <span class="d-flex mt-2">
+              <img
+                style="object-fit: cover; z-index: 10"
+                class="rounded-pill mini-img border border-white border-2"
+                width="40px"
+                src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/users/150-1.jpg"
+                alt=""
+              />
+              <img
+                style="
+                  object-fit: cover;
+                  z-index: 20;
+                  transform: translate(-10px, 0px);
+                "
+                class="rounded-pill mini-img border border-white border-2"
+                width="40px"
+                src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/users/150-10.jpg"
+                alt=""
+              />
+              <img
+                style="
+                  object-fit: cover;
+                  z-index: 30;
+                  transform: translate(-20px, 0px);
+                "
+                class="rounded-pill mini-img border border-white border-2"
+                width="40px"
+                src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/users/150-11.jpg"
+                alt=""
+              />
+              <img
+                style="
+                  object-fit: cover;
+                  z-index: 40;
+                  transform: translate(-30px, 0px);
+                "
+                class="rounded-pill mini-img border border-white border-2"
+                width="40px"
+                src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/users/150-2.jpg"
+                alt=""
+              />
+              <img
+                style="
+                  object-fit: cover;
+                  z-index: 50;
+                  transform: translate(-40px, 0px);
+                "
+                class="rounded-pill mini-img border border-white border-2"
+                width="40px"
+                src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/users/150-3.jpg"
+                alt=""
+              />
+            </span>
+            <a href="#!" class="btn btn-success fw-bold">Join</a>
+          </div>
+        </div>
+        <div class="card p-3 mt-3 border-0">
+          <div class="card-body">
+            <span class="d-flex align-items-center">
+              <span class="date me-3">
+                <p class="fw-bold">08</p>
+                <p class="fw-bold">DEC</p>
+              </span>
+              <span>
+                <h5 class="lh-1">AirGreat Presentation</h5>
+                <p class="lh-1">Oxford Street</p>
+              </span>
+            </span>
+            <p class="pt-4 mb-1">
+              To start a blog, think of a topic about and first brainstorm ways
+              to write details
+            </p>
+          </div>
+          <div
+            class="card-footer bg-white d-flex justify-content-between align-items-center"
+          >
+            <span class="d-flex mt-2">
+              <img
+                style="object-fit: cover; z-index: 10"
+                class="rounded-pill mini-img border border-white border-2"
+                width="40px"
+                src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/users/150-1.jpg"
+                alt=""
+              />
+              <img
+                style="
+                  object-fit: cover;
+                  z-index: 20;
+                  transform: translate(-10px, 0px);
+                "
+                class="rounded-pill mini-img border border-white border-2"
+                width="40px"
+                src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/users/150-10.jpg"
+                alt=""
+              />
+              <img
+                style="
+                  object-fit: cover;
+                  z-index: 30;
+                  transform: translate(-20px, 0px);
+                "
+                class="rounded-pill mini-img border border-white border-2"
+                width="40px"
+                src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/users/150-11.jpg"
+                alt=""
+              />
+              <img
+                style="
+                  object-fit: cover;
+                  z-index: 40;
+                  transform: translate(-30px, 0px);
+                "
+                class="rounded-pill mini-img border border-white border-2"
+                width="40px"
+                src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/users/150-2.jpg"
+                alt=""
+              />
+              <img
+                style="
+                  object-fit: cover;
+                  z-index: 50;
+                  transform: translate(-40px, 0px);
+                "
+                class="rounded-pill mini-img border border-white border-2"
+                width="40px"
+                src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/users/150-3.jpg"
+                alt=""
+              />
+            </span>
+            <a href="#!" class="btn btn-success fw-bold">Join</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="row container mx-auto mt-5">
+      <div class="col-xl-4 col-sm-12 col-md-12 mt-3">
+        <div class="card rounded p-3 border border-0">
+          <div
+            class="card-header bg-white d-flex justify-content-between border border-0 align-items-center"
+          >
+            <span>
+              <h4 class="text-dark lh-1 fw-bold">Authors Progress</h4>
+              <p class="text-muted lh-1 fw-bold">Avarage +47%</p>
+            </span>
+            <a href="#!" class="rounded quic-action"
+              ><i class="fas fa-ellipsis-h fw-bold p-1 text-success fs-5"></i
+            ></a>
+          </div>
+          <div class="card-body">
+            <span class="d-flex justify-content-between mb-2">
+              <span class="d-flex"
+                ><img
+                  style="
+                    object-fit: cover;
+                    width: 100%;
+                    max-width: 35px;
+                    height: 35px;
+                  "
+                  class="rounded"
+                  src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/users/150-1.jpg"
+                  alt=""
+                />
+                <span class="ms-2 font-span">
+                  <h5 class="text-dark lh-1 fw-normal">Ana Larson</h5>
+                  <p class="text-muted fw-normal lh-1">UI/UX, Art Director</p>
+                </span>
+              </span>
+              <span class="d-flex align-items-center">
+                <p class="text-success fw-bold mb-0">+65%</p>
+                <a href="#!" class="ms-3 quic-action p-1 ps-2 pe-2 rounded"
+                  ><i class="fas fa-chevron-right text-success"></i
+                ></a>
+              </span>
+            </span>
+            <span class="d-flex justify-content-between mb-2">
+              <span class="d-flex"
+                ><img
+                  style="
+                    object-fit: cover;
+                    width: 100%;
+                    max-width: 35px;
+                    height: 35px;
+                  "
+                  class="rounded"
+                  src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/users/150-1.jpg"
+                  alt=""
+                />
+                <span class="ms-2 font-span">
+                  <h5 class="text-dark lh-1 fw-normal">Wordpress</h5>
+                  <p class="text-muted fw-normal lh-1">eCommerce, Website</p>
+                </span>
+              </span>
+              <span class="d-flex align-items-center">
+                <p class="text-success fw-bold mb-0">+65%</p>
+                <a href="#!" class="ms-3 quic-action p-1 ps-2 pe-2 rounded"
+                  ><i class="fas fa-chevron-right text-success"></i
+                ></a>
+              </span>
+            </span>
+            <span class="d-flex justify-content-between mb-2">
+              <span class="d-flex"
+                ><img
+                  style="
+                    object-fit: cover;
+                    width: 100%;
+                    max-width: 35px;
+                    height: 35px;
+                  "
+                  class="rounded"
+                  src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/users/150-1.jpg"
+                  alt=""
+                />
+                <span class="ms-2 font-span">
+                  <h5 class="text-dark lh-1 fw-normal">John</h5>
+                  <p class="text-muted fw-normal lh-1">Dashbards</p>
+                </span>
+              </span>
+              <span class="d-flex align-items-center">
+                <p class="text-danger fw-bold mb-0">-35%</p>
+                <a href="#!" class="ms-3 quic-action p-1 ps-2 pe-2 rounded"
+                  ><i class="fas fa-chevron-right text-success"></i
+                ></a>
+              </span>
+            </span>
+            <span class="d-flex justify-content-between mb-2">
+              <span class="d-flex"
+                ><img
+                  style="
+                    object-fit: cover;
+                    width: 100%;
+                    max-width: 35px;
+                    height: 35px;
+                  "
+                  class="rounded"
+                  src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/users/150-12.jpg"
+                  alt=""
+                />
+                <span class="ms-2 font-span">
+                  <h5 class="text-dark lh-1 fw-normal">Mark</h5>
+                  <p class="text-muted fw-normal lh-1">Python, Django</p>
+                </span>
+              </span>
+              <span class="d-flex align-items-center">
+                <p class="text-success fw-bold mb-0">+75%</p>
+                <a href="#!" class="ms-3 quic-action p-1 ps-2 pe-2 rounded"
+                  ><i class="fas fa-chevron-right text-success"></i
+                ></a>
+              </span>
+            </span>
+            <span class="d-flex justify-content-between mb-2">
+              <span class="d-flex"
+                ><img
+                  style="
+                    object-fit: cover;
+                    width: 100%;
+                    max-width: 35px;
+                    height: 35px;
+                  "
+                  class="rounded"
+                  src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/users/150-12.jpg"
+                  alt=""
+                />
+                <span class="ms-2 font-span">
+                  <h5 class="text-dark lh-1 fw-normal">Kevin</h5>
+                  <p class="text-muted fw-normal lh-1">Python, Django</p>
+                </span>
+              </span>
+              <span class="d-flex align-items-center">
+                <p class="text-success fw-bold mb-0">+50%</p>
+                <a href="#!" class="ms-3 quic-action p-1 ps-2 pe-2 rounded"
+                  ><i class="fas fa-chevron-right text-success"></i
+                ></a>
+              </span>
+            </span>
+            <span class="d-flex justify-content-between mb-2">
+              <span class="d-flex"
+                ><img
+                  style="
+                    object-fit: cover;
+                    width: 100%;
+                    max-width: 35px;
+                    height: 35px;
+                  "
+                  class="rounded"
+                  src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/users/150-12.jpg"
+                  alt=""
+                />
+                <span class="ms-2 font-span">
+                  <h5 class="text-dark lh-1 fw-normal">Ana Larson</h5>
+                  <p class="text-muted fw-normal lh-1">Python, Django</p>
+                </span>
+              </span>
+              <span class="d-flex align-items-center">
+                <p class="text-warning fw-bold mb-0">+35%</p>
+                <a href="#!" class="ms-3 quic-action p-1 ps-2 pe-2 rounded"
+                  ><i class="fas fa-chevron-right text-success"></i
+                ></a>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-8 col-sm-12 col-md-12 mt-3">
+        <div class="card border-0 rounded p-3">
+          <div
+            class="card-header bg-white d-flex justify-content-between border border-0 align-items-center"
+          >
+            <span>
+              <h4 class="text-dark lh-1 fw-bold">Revenue Growth</h4>
+            </span>
+            <a href="#!" class="rounded quic-action"
+              ><i class="fas fa-ellipsis-h fw-bold p-1 text-success fs-5"></i
+            ></a>
+          </div>
+          <div class="card-body">
+            <div id="canvas-holder" style="width: 100%">
+              <canvas id="myChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container mx-auto mt-3 row">
+      <div class="col-12">
+        <div class="card p-3 border-0 rounded table-card">
+          <div
+            class="card-header border-0 bg-white d-flex align-items-center justify-content-between"
+          >
+            <span>
+              <h4 class="text-dark">New Arrivals</h4>
+              <p class="text-muted">More than 400+ new members</p>
+            </span>
+            <span class="d-flex align-items-center">
+              <a href="#!" class="text-muted fw-bold rounded p-1 dates me-2"
+                >Month</a
+              >
+              <a href="#!" class="text-muted fw-bold rounded p-1 dates me-2"
+                >Week</a
+              >
+              <a
+                href="#!"
+                class="text-muted fw-bold rounded p-1 dates me-2 active"
+                >Day</a
+              >
+            </span>
+          </div>
+          <div class="card-body">
+            <table class="table table-borderless">
+              <tbody>
+                <tr>
+                  <th scope="row">
+                    <span class="d-flex align-items-center"
+                      ><span class="p-2 mb-3 bg-light rounded">
+                        <img
+                          class=""
+                          width="25px"
+                          src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/svg/misc/006-plurk.svg"
+                          alt=""
+                        />
+                      </span>
+                      <span class="ms-2">
+                        <h5 class="text-dark lh-1 fw-normal display-7">
+                          Sant Outstanding Extreanet Solution
+                        </h5>
+                        <p class="text-muted fw-normal lh-1 display-7">
+                          FTP: bprow@bnc.cc
+                        </p>
+                      </span>
+                    </span>
+                  </th>
+                  <td>
+                    <h3 class="display-7 lh-1 fw-bold">$2,000,000</h3>
+                    <p class="display-7 lh-1 text-secondary fw-bold">Paid</p>
+                  </td>
+                  <td class="display-7 text-secondary fw-bold">
+                    ReactJs, HTML
+                  </td>
+                  <td><span class="badge bg-info">Approved</span></td>
+                  <td>
+                    <span class="d-flex align-items-center"
+                      ><a href="#!" class="p-1 table-icon bg-light mx-2 rounded"
+                        ><i class="far fa-check-circle text-success"></i
+                      ></a>
+                      <a href="#!" class="p-1 table-icon bg-light mx-2 rounded"
+                        ><i class="far fa-edit text-success"></i
+                      ></a>
+                      <a href="#!" class="p-1 table-icon bg-light mx-2 rounded"
+                        ><i class="fas fa-trash text-success"></i
+                      ></a>
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <span class="d-flex align-items-center"
+                      ><span class="p-2 mb-3 bg-light rounded">
+                        <img
+                          class=""
+                          width="25px"
+                          src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/svg/misc/015-telegram.svg"
+                          alt=""
+                        />
+                      </span>
+                      <span class="ms-2">
+                        <h5 class="text-dark lh-1 fw-normal display-7">
+                          Sant Outstanding Extreanet Solution
+                        </h5>
+                        <p class="text-muted fw-normal lh-1 display-7">
+                          FTP: bprow@bnc.cc
+                        </p>
+                      </span>
+                    </span>
+                  </th>
+                  <td>
+                    <h3 class="display-7 lh-1 fw-bold">$2,000,000</h3>
+                    <p class="display-7 lh-1 text-secondary fw-bold">Paid</p>
+                  </td>
+                  <td class="display-7 text-secondary fw-bold">
+                    ReactJs, HTML
+                  </td>
+                  <td><span class="badge bg-info">Approved</span></td>
+                  <td>
+                    <span class="d-flex align-items-center"
+                      ><a href="#!" class="p-1 table-icon bg-light mx-2 rounded"
+                        ><i class="far fa-check-circle text-success"></i
+                      ></a>
+                      <a href="#!" class="p-1 table-icon bg-light mx-2 rounded"
+                        ><i class="far fa-edit text-success"></i
+                      ></a>
+                      <a href="#!" class="p-1 table-icon bg-light mx-2 rounded"
+                        ><i class="fas fa-trash text-success"></i
+                      ></a>
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <span class="d-flex align-items-center"
+                      ><span class="p-2 mb-3 bg-light rounded">
+                        <img
+                          class=""
+                          width="25px"
+                          src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/svg/misc/003-puzzle.svg"
+                          alt=""
+                        />
+                      </span>
+                      <span class="ms-2">
+                        <h5 class="text-dark lh-1 fw-normal display-7">
+                          Sant Outstanding Extreanet Solution
+                        </h5>
+                        <p class="text-muted fw-normal lh-1 display-7">
+                          FTP: bprow@bnc.cc
+                        </p>
+                      </span>
+                    </span>
+                  </th>
+                  <td>
+                    <h3 class="display-7 lh-1 fw-bold">$2,000,000</h3>
+                    <p class="display-7 lh-1 text-secondary fw-bold">Paid</p>
+                  </td>
+                  <td class="display-7 text-secondary fw-bold">
+                    ReactJs, HTML
+                  </td>
+                  <td><span class="badge bg-info">Approved</span></td>
+                  <td>
+                    <span class="d-flex align-items-center"
+                      ><a href="#!" class="p-1 table-icon bg-light mx-2 rounded"
+                        ><i class="far fa-check-circle text-success"></i
+                      ></a>
+                      <a href="#!" class="p-1 table-icon bg-light mx-2 rounded"
+                        ><i class="far fa-edit text-success"></i
+                      ></a>
+                      <a href="#!" class="p-1 table-icon bg-light mx-2 rounded"
+                        ><i class="fas fa-trash text-success"></i
+                      ></a>
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+              <tr>
+                <th scope="row">
+                  <span class="d-flex align-items-center"
+                    ><span class="p-2 mb-3 bg-light rounded">
+                      <img
+                        class=""
+                        width="25px"
+                        src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/svg/misc/005-bebo.svg"
+                        alt=""
+                      />
+                    </span>
+                    <span class="ms-2">
+                      <h5 class="text-dark lh-1 fw-normal display-7">
+                        Sant Outstanding Extreanet Solution
+                      </h5>
+                      <p class="text-muted fw-normal lh-1 display-7">
+                        FTP: bprow@bnc.cc
+                      </p>
+                    </span>
+                  </span>
+                </th>
+                <td>
+                  <h3 class="display-7 lh-1 fw-bold">$2,000,000</h3>
+                  <p class="display-7 lh-1 text-secondary fw-bold">Paid</p>
+                </td>
+                <td class="display-7 text-secondary fw-bold">ReactJs, HTML</td>
+                <td><span class="badge bg-info">Approved</span></td>
+                <td>
+                  <span class="d-flex align-items-center"
+                    ><a href="#!" class="p-1 table-icon bg-light mx-2 rounded"
+                      ><i class="far fa-check-circle text-success"></i
+                    ></a>
+                    <a href="#!" class="p-1 table-icon bg-light mx-2 rounded"
+                      ><i class="far fa-edit text-success"></i
+                    ></a>
+                    <a href="#!" class="p-1 table-icon bg-light mx-2 rounded"
+                      ><i class="fas fa-trash text-success"></i
+                    ></a>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <span class="d-flex align-items-center"
+                    ><span class="p-2 mb-3 bg-light rounded">
+                      <img
+                        class=""
+                        width="25px"
+                        src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/svg/misc/007-disqus.svg"
+                        alt=""
+                      />
+                    </span>
+                    <span class="ms-2">
+                      <h5 class="text-dark lh-1 fw-normal display-7">
+                        Sant Outstanding Extreanet Solution
+                      </h5>
+                      <p class="text-muted fw-normal lh-1 display-7">
+                        FTP: bprow@bnc.cc
+                      </p>
+                    </span>
+                  </span>
+                </th>
+                <td>
+                  <h3 class="display-7 lh-1 fw-bold">$2,000,000</h3>
+                  <p class="display-7 lh-1 text-secondary fw-bold">Paid</p>
+                </td>
+                <td class="display-7 text-secondary fw-bold">ReactJs, HTML</td>
+                <td><span class="badge bg-info">Approved</span></td>
+                <td>
+                  <span class="d-flex align-items-center"
+                    ><a href="#!" class="p-1 table-icon bg-light mx-2 rounded"
+                      ><i class="far fa-check-circle text-success"></i
+                    ></a>
+                    <a href="#!" class="p-1 table-icon bg-light mx-2 rounded"
+                      ><i class="far fa-edit text-success"></i
+                    ></a>
+                    <a href="#!" class="p-1 table-icon bg-light mx-2 rounded"
+                      ><i class="fas fa-trash text-success"></i
+                    ></a>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container mx-auto mt-3 row">
+      <div class="col-xxl-4 col-md-12 col-6 col-12">
+        <div class="card border-0 rounded p-3">
+          <div
+            class="card-header border-0 bg-white d-flex align-items-center justify-content-between"
+          >
+            <span>
+              <h4 class="text-dark">Timeline</h4>
+              <p class="text-muted">8 New Updates</p>
+            </span>
+            <span class="d-flex align-items-center">
+              <a href="#!" class="text-muted fw-bold rounded p-1 dates me-2"
+                >Week</a
+              >
+              <a
+                href="#!"
+                class="text-muted fw-bold rounded p-1 dates me-2 active"
+                >Day</a
+              >
+            </span>
+          </div>
+          <div class="card-body">
+            <span class="d-flex align-items-center">
+              <span class="icon-span d-flex align-items-center">
+                <i class="fas fa-comment-dots text-success ms-2"></i>
+              </span>
+              <span class="ms-2 mt-3">
+                <h4 class="display-7 text-success lh-1">04:30 AM</h4>
+                <p class="display-7 lh-1">
+                  Many desktop publishing packages and web page editors now use
+                  Lorem Ipsum.
+                </p>
+              </span>
+            </span>
+            <div class="divider"></div>
+            <span class="d-flex align-items-center mt-0">
+              <span class="icon-span d-flex align-items-center">
+                <i class="fas fa-comment-dots text-success ms-2"></i>
+              </span>
+              <span class="ms-2 mt-3">
+                <h4 class="display-7 text-success lh-1">04:30 AM</h4>
+                <p class="display-7 lh-1">
+                  Many desktop publishing packages and web page editors now use
+                  Lorem Ipsum.
+                </p>
+              </span>
+            </span>
+            <div class="divider"></div>
+            <span class="d-flex align-items-center mt-0">
+              <span class="icon-span d-flex align-items-center">
+                <i class="fas fa-comment-dots text-success ms-2"></i>
+              </span>
+              <span class="ms-2 mt-3">
+                <h4 class="display-7 text-success lh-1">04:30 AM</h4>
+                <p class="display-7 lh-1">
+                  Many desktop publishing packages and web page editors now use
+                  Lorem Ipsum.
+                </p>
+              </span>
+            </span>
+            <div class="divider"></div>
+            <span class="d-flex align-items-center mt-0">
+              <span class="icon-span d-flex align-items-center">
+                <i class="fas fa-comment-dots text-success ms-2"></i>
+              </span>
+              <span class="ms-2 mt-3">
+                <h4 class="display-7 text-success lh-1">04:30 AM</h4>
+                <p class="display-7 lh-1">
+                  Many desktop publishing packages and web page editors now use
+                  Lorem Ipsum.
+                </p>
+              </span>
+            </span>
+            <div class="divider"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xxl-4 col-md-12 col-6 col-12">
+        <div class="card rounded mt-3 p-3 border-0">
+          <div
+            class="card-header bg-white d-flex justify-content-between border border-0 align-items-center"
+          >
+            <span>
+              <h4 class="text-dark lh-1 fw-bold">Audio Files</h4>
+              <p class="text-muted lh-1 fw-bold">479 Tracks</p>
+            </span>
+            <a href="#!" class="rounded quic-action"
+              ><i class="fas fa-ellipsis-h fw-bold p-1 text-success fs-5"></i
+            ></a>
+          </div>
+          <div class="card-body">
+            <span class="d-flex justify-content-between mb-2">
+              <span class="d-flex"
+                ><img
+                  style="
+                    object-fit: cover;
+                    width: 100%;
+                    max-width: 35px;
+                    height: 35px;
+                  "
+                  class="rounded"
+                  src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/users/150-12.jpg"
+                  alt=""
+                />
+                <span class="ms-2 font-span">
+                  <h5 class="text-dark lh-1 fw-normal">Kevin</h5>
+                  <p class="text-muted fw-normal lh-1">Python, Django</p>
+                </span>
+              </span>
+              <span class="d-flex align-items-center">
+                <p class="text-muted fw-bold mb-0">$1500</p>
+              </span>
+            </span>
+            <span class="d-flex justify-content-between mb-2">
+              <span class="d-flex"
+                ><img
+                  style="
+                    object-fit: cover;
+                    width: 100%;
+                    max-width: 35px;
+                    height: 35px;
+                  "
+                  class="rounded"
+                  src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/users/150-5.jpg"
+                  alt=""
+                />
+                <span class="ms-2 font-span">
+                  <h5 class="text-dark lh-1 fw-normal">Kevin</h5>
+                  <p class="text-muted fw-normal lh-1">Python, Django</p>
+                </span>
+              </span>
+              <span class="d-flex align-items-center">
+                <p class="text-muted fw-bold mb-0">$300</p>
+              </span>
+            </span>
+            <span class="d-flex justify-content-between mb-2">
+              <span class="d-flex"
+                ><img
+                  style="
+                    object-fit: cover;
+                    width: 100%;
+                    max-width: 35px;
+                    height: 35px;
+                  "
+                  class="rounded"
+                  src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/users/150-7.jpg"
+                  alt=""
+                />
+                <span class="ms-2 font-span">
+                  <h5 class="text-dark lh-1 fw-normal">Kevin</h5>
+                  <p class="text-muted fw-normal lh-1">UX UI, ART Director</p>
+                </span>
+              </span>
+              <span class="d-flex align-items-center">
+                <p class="text-muted fw-bold mb-0">$8300</p>
+              </span>
+            </span>
+            <span class="d-flex justify-content-between mb-2">
+              <span class="d-flex"
+                ><img
+                  style="
+                    object-fit: cover;
+                    width: 100%;
+                    max-width: 35px;
+                    height: 35px;
+                  "
+                  class="rounded"
+                  src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/users/150-12.jpg"
+                  alt=""
+                />
+                <span class="ms-2 font-span">
+                  <h5 class="text-dark lh-1 fw-normal">Kevin</h5>
+                  <p class="text-muted fw-normal lh-1">Python, Django</p>
+                </span>
+              </span>
+              <span class="d-flex align-items-center">
+                <p class="text-muted fw-bold mb-0">$8300</p>
+              </span>
+            </span>
+            <span class="d-flex justify-content-between mb-2">
+              <span class="d-flex"
+                ><img
+                  style="
+                    object-fit: cover;
+                    width: 100%;
+                    max-width: 35px;
+                    height: 35px;
+                  "
+                  class="rounded"
+                  src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/users/150-7.jpg"
+                  alt=""
+                />
+                <span class="ms-2 font-span">
+                  <h5 class="text-dark lh-1 fw-normal">Kevin</h5>
+                  <p class="text-muted fw-normal lh-1">Python, Django</p>
+                </span>
+              </span>
+              <span class="d-flex align-items-center">
+                <p class="text-muted fw-bold mb-0">$8300</p>
+              </span>
+            </span>
+            <span class="d-flex justify-content-between mb-2">
+              <span class="d-flex"
+                ><img
+                  style="
+                    object-fit: cover;
+                    width: 100%;
+                    max-width: 35px;
+                    height: 35px;
+                  "
+                  class="rounded"
+                  src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/users/150-5.jpg"
+                  alt=""
+                />
+                <span class="ms-2 font-span">
+                  <h5 class="text-dark lh-1 fw-normal">Kevin</h5>
+                  <p class="text-muted fw-normal lh-1">Python, Django</p>
+                </span>
+              </span>
+              <span class="d-flex align-items-center">
+                <p class="text-muted fw-bold mb-0">$8300</p>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="col-xxl-4 col-md-12 col-6 col-12">
+        <div class="card rounded mt-3 p-3 border-0">
+          <div
+            class="card-header border-0 bg-white d-flex align-items-center justify-content-between"
+          >
+            <span>
+              <h4 class="text-dark lh-1 fw-bold">Audio Files</h4>
+              <p class="text-muted lh-1 fw-bold">479 Tracks</p>
+            </span>
+            <span class="d-flex align-items-center">
+              <a href="#!" class="text-muted fw-bold rounded p-1 dates me-2"
+                >Latest</a
+              >
+              <a
+                href="#!"
+                class="text-muted fw-bold rounded p-1 dates me-2 active"
+                >Popular</a
+              >
+            </span>
+          </div>
+          <div class="card-body">
+            <span
+              class="d-flex align-items-center justify-content-between mt-2"
+            >
+              <span class="d-flex align-items-center">
+                <a
+                  href="#!"
+                  style="background-color: #d7f9ef"
+                  class="table-icon p-2 rounded me-2 mb-2"
+                  ><i class="fas fa-play text-success fs-5"></i
+                ></a>
+                <span>
+                  <h4 class="text-dark lh-1 fw-bold display-7">Sunspots</h4>
+                  <p class="text-muted lh-1 fw-bold display-7">26MB</p>
+                </span>
+              </span>
+              <a href="#!" class="rounded quic-action"
+                ><i class="fas fa-ellipsis-h fw-bold p-1 text-success fs-5"></i
+              ></a>
+            </span>
+            <span
+              class="d-flex align-items-center justify-content-between mt-2"
+            >
+              <span class="d-flex align-items-center">
+                <a
+                  href="#!"
+                  style="background-color: #d7f9ef"
+                  class="table-icon p-2 rounded me-2 mb-2"
+                  ><i class="fas fa-play text-success fs-5"></i
+                ></a>
+                <span>
+                  <h4 class="text-dark lh-1 fw-bold display-7">Sunspots</h4>
+                  <p class="text-muted lh-1 fw-bold display-7">26MB</p>
+                </span>
+              </span>
+              <a href="#!" class="rounded quic-action"
+                ><i class="fas fa-ellipsis-h fw-bold p-1 text-success fs-5"></i
+              ></a>
+            </span>
+            <span
+              class="d-flex align-items-center justify-content-between mt-2"
+            >
+              <span class="d-flex align-items-center">
+                <a
+                  href="#!"
+                  style="background-color: #d7f9ef"
+                  class="table-icon p-2 rounded me-2 mb-2"
+                  ><i class="fas fa-play text-success fs-5"></i
+                ></a>
+                <span>
+                  <h4 class="text-dark lh-1 fw-bold display-7">Sunspots</h4>
+                  <p class="text-muted lh-1 fw-bold display-7">26MB</p>
+                </span>
+              </span>
+              <a href="#!" class="rounded quic-action"
+                ><i class="fas fa-ellipsis-h fw-bold p-1 text-success fs-5"></i
+              ></a>
+            </span>
+            <span
+              class="d-flex align-items-center justify-content-between mt-2"
+            >
+              <span class="d-flex align-items-center">
+                <a
+                  href="#!"
+                  style="background-color: #d7f9ef"
+                  class="table-icon p-2 rounded me-2 mb-2"
+                  ><i class="fas fa-play text-success fs-5"></i
+                ></a>
+                <span>
+                  <h4 class="text-dark lh-1 fw-bold display-7">Sunspots</h4>
+                  <p class="text-muted lh-1 fw-bold display-7">26MB</p>
+                </span>
+              </span>
+              <a href="#!" class="rounded quic-action"
+                ><i class="fas fa-ellipsis-h fw-bold p-1 text-success fs-5"></i
+              ></a>
+            </span>
+            <span
+              class="d-flex align-items-center justify-content-between mt-2"
+            >
+              <span class="d-flex align-items-center">
+                <a
+                  href="#!"
+                  style="background-color: #d7f9ef"
+                  class="table-icon p-2 rounded me-2 mb-2"
+                  ><i class="fas fa-play text-success fs-5"></i
+                ></a>
+                <span>
+                  <h4 class="text-dark lh-1 fw-bold display-7">Sunspots</h4>
+                  <p class="text-muted lh-1 fw-bold display-7">26MB</p>
+                </span>
+              </span>
+              <a href="#!" class="rounded quic-action"
+                ><i class="fas fa-ellipsis-h fw-bold p-1 text-success fs-5"></i
+              ></a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-white mt-3 pt-3">
+      <div class="d-lg-flex justify-content-between container">
+        <span class="d-flex fs-5"
+          ><p class="text-muted me-2">2021©</p>
+          <a href="#!" class="text-dark"> Keenthemes</a>
+        </span>
+        <span class="d-flex">
+          <a href="#!" class="text-muted me-4 fs-5">About</a>
+          <a href="#!" class="text-muted me-4 fs-5">Team</a>
+          <a href="#!" class="text-muted me-4 fs-5">Contact</a>
+        </span>
+      </div>
+    </footer>
+    <script>
+      var randomScalingFactor = function () {
+        return Math.round(Math.random() * 100);
+      };
+
+      var config = {
+        type: "line",
+        data: {
+          datasets: [
+            {
+              data: [
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+              ],
+              backgroundColor: [
+                window.chartColors.red,
+                window.chartColors.orange,
+                window.chartColors.yellow,
+                window.chartColors.green,
+                window.chartColors.blue,
+              ],
+              label: "Dataset 1",
+            },
+          ],
+          labels: ["Red", "Orange", "Yellow", "Green", "Blue"],
+        },
+        options: {
+          responsive: true,
+        },
+      };
+
+      window.onload = function () {
+        var ctx = document.getElementById("chart-area").getContext("2d");
+        window.myPie = new Chart(ctx, config);
+      };
+
+      document
+        .getElementById("randomizeData")
+        .addEventListener("click", function () {
+          config.data.datasets.forEach(function (dataset) {
+            dataset.data = dataset.data.map(function () {
+              return randomScalingFactor();
+            });
+          });
+
+          window.myPie.update();
+        });
+
+      var colorNames = Object.keys(window.chartColors);
+      document
+        .getElementById("addDataset")
+        .addEventListener("click", function () {
+          var newDataset = {
+            backgroundColor: [],
+            data: [],
+            label: "New dataset " + config.data.datasets.length,
+          };
+
+          for (var index = 0; index < config.data.labels.length; ++index) {
+            newDataset.data.push(randomScalingFactor());
+
+            var colorName = colorNames[index % colorNames.length];
+            var newColor = window.chartColors[colorName];
+            newDataset.backgroundColor.push(newColor);
+          }
+
+          config.data.datasets.push(newDataset);
+          window.myPie.update();
+        });
+
+      document
+        .getElementById("removeDataset")
+        .addEventListener("click", function () {
+          config.data.datasets.splice(0, 1);
+          window.myPie.update();
+        });
+    </script>
+    <script>
+      var ctx = document.getElementById("myChart-2").getContext("2d");
+      var myChart = new Chart(ctx, {
+        type: "line",
+        data: {
+          labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+          datasets: [
+            {
+              label: "# of Votes",
+              data: [12, 19, 3, 5, 2, 3],
+              backgroundColor: ["#0bb783"],
+              borderColor: ["#0bb783"],
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            yAxes: [
+              {
+                ticks: {
+                  beginAtZero: true,
+                },
+              },
+            ],
+          },
+        },
+      });
+    </script>
+    <script>
+      var ctx = document.getElementById("myChart").getContext("2d");
+      var chart = new Chart(ctx, {
+        type: "line",
+        data: {
+          labels: [
+            "1 Aug",
+            "2 Aug",
+            "3 Aug",
+            "4 Aug",
+            "5 Aug",
+            "6 Aug",
+            "7 Aug",
+            "8 Aug",
+            "9 Aug",
+            "10 Aug",
+          ],
+          datasets: [
+            {
+              label: "Author",
+
+              backgroundColor: "#0bb783",
+              borderColor: "#0bb783",
+              data: [0, 10, 5, 2, 20, 30, 45, 54, 63, 72, 81, 90],
+            },
+          ],
+        },
+        options: {},
+      });
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

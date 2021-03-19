@@ -1,0 +1,120 @@
+.bg-header {
+  background: #181c32;
+}
+
+nav div {
+  min-height: 80px;
+}
+
+.a-icon:hover {
+  background: #6b6a6a;
+}
+.a-icon:hover i {
+  color: #e2dfdf !important;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 97;
+  height: 77px;
+}
+
+.nav-color {
+  color: #adb1c7 !important;
+}
+
+.creat-btn {
+  color: #fff;
+  background-color: #0bb783;
+  border-color: #0bb783;
+}
+
+.logo {
+  width: 100%;
+  max-width: 450px;
+}
+
+.nav-link {
+  color: #adb1c7 !important;
+}
+
+.divider {
+  height: 40px;
+  width: 0.1px;
+}
+
+.sec-1 h4,
+.sec-1 h2 {
+  cursor: pointer;
+}
+
+h4:hover {
+  color: #0bb783 !important;
+}
+h4::after {
+  color: #0bb783 !important;
+}
+
+.subheader {
+  overflow: scroll;
+  margin-top: 80px;
+}
+
+.subheader-span {
+  width: 220px;
+}
+
+.any-links a:hover {
+  color: #0bb783 !important;
+}
+
+.table-span {
+  margin-top: 10px;
+}
+.table-span h3 {
+  line-height: 5px;
+}
+.table-span a:hover {
+  color: #0bb783 !important;
+}
+
+table {
+  flex-wrap: wrap;
+}
+table thead tr a:hover {
+  color: #0bb783 !important;
+}
+table h3 {
+  line-height: 5px;
+}
+
+.action span i {
+  cursor: pointer;
+}
+.action span:hover {
+  background: #cac6c6;
+}
+.action span:hover i {
+  color: #0bb783 !important;
+}
+
+footer a:hover {
+  color: #0bb783 !important;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: #cceef2;
+}
+
+/*# sourceMappingURL=style.css.map */

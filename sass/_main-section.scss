@@ -1,0 +1,21 @@
+.quic-action {
+  &:hover {
+    background: rgb(197, 193, 193);
+  }
+}
+.date {
+  background-color: #d7f9ef;
+  color: #0bb783;
+  padding: 20px;
+  border-radius: 55px;
+  text-align: center;
+  p {
+    line-height: 0px;
+  }
+}
+.mini-img {
+  cursor: pointer;
+  &:hover {
+    z-index: 80 !important;
+  }
+}

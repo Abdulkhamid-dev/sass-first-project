@@ -1,0 +1,13 @@
+@import "_header";
+@import "_footer";
+@import "main-section";
+@import "sec-table";
+body {
+  background: #cceef2;
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+}

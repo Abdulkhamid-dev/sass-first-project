@@ -1,0 +1,43 @@
+.font-span {
+  * {
+    font-size: 13px !important;
+    font-weight: 600 !important;
+  }
+}
+.dates {
+  &:hover {
+    color: #fff !important;
+    background-color: #181c32 !important;
+  }
+}
+.active {
+  color: #fff !important;
+  background-color: #181c32 !important;
+}
+.display-7 {
+  font-size: 14px !important;
+}
+.table-icon {
+  &:hover {
+    i {
+      color: #fff !important;
+    }
+    background-color: #0bb783 !important;
+  }
+}
+.table-card {
+  overflow: scroll;
+}
+.icon-span {
+  background-color: #d7f9ef !important;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+}
+.divider {
+  margin-top: -5px;
+  margin-left: 15px;
+  height: 25px;
+  width: 4px;
+  background: #d7f9ef;
+}
