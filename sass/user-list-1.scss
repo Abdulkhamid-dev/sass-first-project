@@ -1,0 +1,19 @@
+@import "_header";
+@import "_footer";
+@import "_essentials";
+
+.Profile-img {
+  width: 100%;
+  max-width: 120px;
+}
+.border-radious {
+  border-radius: 10px !important;
+}
+.imgs {
+  img {
+    cursor: pointer;
+    &:hover {
+      z-index: 100 !important;
+    }
+  }
+}

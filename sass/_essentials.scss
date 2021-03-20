@@ -1,0 +1,37 @@
+body {
+  background: #cceef2;
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+.bg-light-success {
+  color: #0bb783;
+  background-color: #d7f9ef;
+}
+.progress {
+  width: 250px;
+  height: 10px;
+}
+.next-page,
+.previous-page {
+  color: #0bb783;
+  background-color: #d7f9ef !important;
+}
+.page-link {
+  background: #d7f9ef;
+  border-radius: 10px !important;
+  color: black !important;
+  &:hover {
+    color: #fff !important;
+    background-color: #0bb783 !important;
+    border-color: #0bb783 !important;
+  }
+}
+.form-select {
+  color: #0bb783 !important;
+  font-weight: 500;
+  background-color: #d7f9ef !important;
+}
