@@ -1,0 +1,46 @@
+@import "_essentials";
+@import "_fonts";
+.aside {
+  background-color: #7ebfdb;
+  width: 100%;
+  max-width: 550px;
+}
+.aside-img {
+  height: 100vh;
+}
+input {
+  background-color: #f3f6f9 !important;
+  border-color: #f3f6f9 !important;
+  border: none !important;
+  outline: transparent !important;
+  color: #3f4254 !important;
+  border-radius: 8px !important;
+  &:focus {
+    background-color: #ebedf3;
+    border-color: #ebedf3;
+    color: #3f4254;
+  }
+}
+body {
+  background: white;
+}
+.login-content {
+  width: 100%;
+  max-width: 750px;
+}
+section {
+  display: flex;
+}
+@media (max-width: 800px) {
+  section {
+    display: block;
+    .aside {
+      width: 100%;
+      max-width: 800px;
+    }
+    .login-content {
+      width: 100%;
+      max-width: 800px;
+    }
+  }
+}

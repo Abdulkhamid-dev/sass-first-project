@@ -1,0 +1,7 @@
+$font: 2;
+@while $font <= 40 {
+  .font-#{$font} {
+    font-size: 2px * $font;
+  }
+  $font: $font + 1;
+}

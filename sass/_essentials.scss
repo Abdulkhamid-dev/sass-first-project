@@ -35,3 +35,26 @@ body {
   font-weight: 500;
   background-color: #d7f9ef !important;
 }
+.disabled {
+  background: rgb(248, 248, 248) !important;
+}
+.fw-50 {
+  font-weight: 500;
+}
+.lh-0 {
+  line-height: 0px;
+}
+.lh-min {
+  line-height: 3px;
+}
+.btn-main {
+  color: #0bb783;
+  background-color: #d7f9ef;
+  border-color: transparent;
+}
+.main-color {
+  color: #0bb783;
+}
+.main-bg {
+  background-color: #d7f9ef;
+}

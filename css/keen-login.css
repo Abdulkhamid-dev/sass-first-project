@@ -1,0 +1,281 @@
+body {
+  background: #cceef2;
+}
+body li {
+  list-style: none;
+}
+body a {
+  text-decoration: none;
+}
+
+.bg-light-success {
+  color: #0bb783;
+  background-color: #d7f9ef;
+}
+
+.progress {
+  width: 250px;
+  height: 10px;
+}
+
+.next-page,
+.previous-page {
+  color: #0bb783;
+  background-color: #d7f9ef !important;
+}
+
+.page-link {
+  background: #d7f9ef;
+  border-radius: 10px !important;
+  color: black !important;
+}
+.page-link:hover {
+  color: #fff !important;
+  background-color: #0bb783 !important;
+  border-color: #0bb783 !important;
+}
+
+.form-select {
+  color: #0bb783 !important;
+  font-weight: 500;
+  background-color: #d7f9ef !important;
+}
+
+.disabled {
+  background: #f8f8f8 !important;
+}
+
+.fw-50 {
+  font-weight: 500;
+}
+
+.lh-0 {
+  line-height: 0px;
+}
+
+.lh-min {
+  line-height: 3px;
+}
+
+.btn-main {
+  color: #0bb783;
+  background-color: #d7f9ef;
+  border-color: transparent;
+}
+
+.main-color {
+  color: #0bb783;
+}
+
+.main-bg {
+  background-color: #d7f9ef;
+}
+
+.font-2 {
+  font-size: 4px;
+}
+
+.font-3 {
+  font-size: 6px;
+}
+
+.font-4 {
+  font-size: 8px;
+}
+
+.font-5 {
+  font-size: 10px;
+}
+
+.font-6 {
+  font-size: 12px;
+}
+
+.font-7 {
+  font-size: 14px;
+}
+
+.font-8 {
+  font-size: 16px;
+}
+
+.font-9 {
+  font-size: 18px;
+}
+
+.font-10 {
+  font-size: 20px;
+}
+
+.font-11 {
+  font-size: 22px;
+}
+
+.font-12 {
+  font-size: 24px;
+}
+
+.font-13 {
+  font-size: 26px;
+}
+
+.font-14 {
+  font-size: 28px;
+}
+
+.font-15 {
+  font-size: 30px;
+}
+
+.font-16 {
+  font-size: 32px;
+}
+
+.font-17 {
+  font-size: 34px;
+}
+
+.font-18 {
+  font-size: 36px;
+}
+
+.font-19 {
+  font-size: 38px;
+}
+
+.font-20 {
+  font-size: 40px;
+}
+
+.font-21 {
+  font-size: 42px;
+}
+
+.font-22 {
+  font-size: 44px;
+}
+
+.font-23 {
+  font-size: 46px;
+}
+
+.font-24 {
+  font-size: 48px;
+}
+
+.font-25 {
+  font-size: 50px;
+}
+
+.font-26 {
+  font-size: 52px;
+}
+
+.font-27 {
+  font-size: 54px;
+}
+
+.font-28 {
+  font-size: 56px;
+}
+
+.font-29 {
+  font-size: 58px;
+}
+
+.font-30 {
+  font-size: 60px;
+}
+
+.font-31 {
+  font-size: 62px;
+}
+
+.font-32 {
+  font-size: 64px;
+}
+
+.font-33 {
+  font-size: 66px;
+}
+
+.font-34 {
+  font-size: 68px;
+}
+
+.font-35 {
+  font-size: 70px;
+}
+
+.font-36 {
+  font-size: 72px;
+}
+
+.font-37 {
+  font-size: 74px;
+}
+
+.font-38 {
+  font-size: 76px;
+}
+
+.font-39 {
+  font-size: 78px;
+}
+
+.font-40 {
+  font-size: 80px;
+}
+
+.aside {
+  background-color: #7ebfdb;
+  width: 100%;
+  max-width: 550px;
+}
+
+.aside-img {
+  height: 100vh;
+}
+
+input {
+  background-color: #f3f6f9 !important;
+  border-color: #f3f6f9 !important;
+  border: none !important;
+  outline: transparent !important;
+  color: #3f4254 !important;
+  border-radius: 8px !important;
+}
+input:focus {
+  background-color: #ebedf3;
+  border-color: #ebedf3;
+  color: #3f4254;
+}
+
+body {
+  background: white;
+}
+
+.login-content {
+  width: 100%;
+  max-width: 750px;
+}
+
+section {
+  display: flex;
+}
+
+@media (max-width: 800px) {
+  section {
+    display: block;
+  }
+  section .aside {
+    width: 100%;
+    max-width: 800px;
+  }
+  section .login-content {
+    width: 100%;
+    max-width: 800px;
+  }
+}
+
+/*# sourceMappingURL=keen-login.css.map */

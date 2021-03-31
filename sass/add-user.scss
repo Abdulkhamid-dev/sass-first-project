@@ -1,0 +1,39 @@
+@import "_header";
+@import "_essentials";
+@import "_footer";
+.input-text {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: silver;
+}
+.input-group {
+  outline: transparent !important;
+  width: 480px !important;
+  background-color: #f3f6f9;
+  border-color: #f3f6f9;
+}
+.w-45 {
+  width: 480px !important;
+  background-color: #f3f6f9;
+  border-color: #f3f6f9;
+  border-radius: 8px;
+}
+input {
+  outline: transparent;
+
+  &:focus {
+    background-color: #ebedf3;
+    border-color: #ebedf3;
+    color: #3f4254;
+  }
+}
+.bg-input {
+  &:focus {
+    background-color: #ebedf3;
+    border-color: #ebedf3;
+    color: #3f4254;
+  }
+  outline: transparent !important;
+  background-color: #f3f6f9;
+  border-color: #f3f6f9;
+}

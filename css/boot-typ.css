@@ -1,0 +1,166 @@
+.bg-header {
+  background: #181c32;
+}
+
+nav div {
+  min-height: 80px;
+}
+
+.a-icon:hover {
+  background: #6b6a6a;
+}
+.a-icon:hover i {
+  color: #e2dfdf !important;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 97;
+  height: 77px;
+}
+
+.nav-color {
+  color: #adb1c7 !important;
+}
+
+.creat-btn {
+  color: #fff;
+  background-color: #0bb783;
+  border-color: #0bb783;
+}
+
+.logo {
+  width: 100%;
+  max-width: 450px;
+}
+
+.nav-link {
+  color: #adb1c7 !important;
+}
+
+.divider {
+  height: 40px;
+  width: 0.1px;
+}
+
+.sec-1 h4,
+.sec-1 h2 {
+  cursor: pointer;
+}
+
+h4:hover {
+  color: #0bb783 !important;
+}
+h4::after {
+  color: #0bb783 !important;
+}
+
+.subheader {
+  overflow: scroll;
+  margin-top: 80px;
+}
+
+.subheader-span {
+  width: 220px;
+}
+
+footer a:hover {
+  color: #0bb783 !important;
+}
+
+body {
+  background: #cceef2;
+}
+body li {
+  list-style: none;
+}
+body a {
+  text-decoration: none;
+}
+
+.bg-light-success {
+  color: #0bb783;
+  background-color: #d7f9ef;
+}
+
+.progress {
+  width: 250px;
+  height: 10px;
+}
+
+.next-page,
+.previous-page {
+  color: #0bb783;
+  background-color: #d7f9ef !important;
+}
+
+.page-link {
+  background: #d7f9ef;
+  border-radius: 10px !important;
+  color: black !important;
+}
+.page-link:hover {
+  color: #fff !important;
+  background-color: #0bb783 !important;
+  border-color: #0bb783 !important;
+}
+
+.form-select {
+  color: #0bb783 !important;
+  font-weight: 500;
+  background-color: #d7f9ef !important;
+}
+
+.disabled {
+  background: #f8f8f8 !important;
+}
+
+.fw-50 {
+  font-weight: 500;
+}
+
+.lh-0 {
+  line-height: 0px;
+}
+
+.lh-min {
+  line-height: 3px;
+}
+
+.btn-main {
+  color: #0bb783;
+  background-color: #d7f9ef;
+  border-color: transparent;
+}
+
+.main-color {
+  color: #0bb783;
+}
+
+.main-bg {
+  background-color: #d7f9ef;
+}
+
+.card {
+  border-radius: 8px !important;
+}
+
+pre {
+  overflow: scroll;
+}
+
+.copy:focus .fa-clone {
+  display: none !important;
+}
+.copy:focus .fa-check {
+  display: block !important;
+  color: #0bb783;
+}
+.copy:hover .fa-clone {
+  color: #0bb783 !important;
+}
+
+/*# sourceMappingURL=boot-typ.css.map */

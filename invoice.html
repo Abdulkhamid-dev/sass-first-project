@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/invoice.css" />
+  </head>
+  <body>
+    <header class="bg-header">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light bg-header">
+        <div class="container-fluid bg-header px-5">
+          <a
+            class="navbar-brand text-white fs-5 fw-normal nav-color d-lg-none"
+            aria-current="page"
+            href="#"
+            ><img
+              src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/logos/logo-4.svg"
+              alt=""
+          /></a>
+          <button
+            class="navbar-toggler bg-white"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse container"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item mx-4">
+                <a
+                  class="nav-link text-white fs-5 fw-normal nav-color"
+                  aria-current="page"
+                  href="#"
+                  >Dashboard</a
+                >
+              </li>
+              <li class="nav-item mx-4">
+                <a
+                  class="nav-link text-white fs-5 fw-normal nav-color"
+                  aria-current="page"
+                  href="#"
+                  >Features</a
+                >
+              </li>
+              <li class="nav-item mx-4">
+                <a class="nav-link text-white fs-5 fw-normal nav-color" href="#"
+                  >Builder</a
+                >
+              </li>
+              <li class="nav-item mx-4 dropdown">
+                <a
+                  class="nav-link text-white fs-5 fw-normal nav-color dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Apps
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item mx-4">
+                <a
+                  class="nav-link text-white fs-5 fw-normal"
+                  href="#"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >Pages</a
+                >
+              </li>
+            </ul>
+            <ul class="icons-menu d-flex mt-3">
+              <li class="icons mx-1 mt-2">
+                <a href="#!" class="a-icon p-2 rounded"
+                  ><i class="fas fs-5 fa-search text-white-50"></i
+                ></a>
+              </li>
+              <li class="icons mx-1 mt-2">
+                <a href="#!" class="a-icon p-2 rounded"
+                  ><i class="fas fs-5 fa-signal text-white-50"></i
+                ></a>
+              </li>
+              <li class="icons mx-1 mt-2">
+                <a href="#!" class="a-icon p-2 rounded"
+                  ><i class="fas fs-5 fa-bars text-white-50"></i
+                ></a>
+              </li>
+              <li class="icons mx-1 mt-2">
+                <a href="#!" class="a-icon p-2 rounded"
+                  ><i class="far fs-5 fa-comment-alt text-white-50"></i
+                ></a>
+              </li>
+              <li class="icons mx-1 mt-2">
+                <a href="#!" class="a-icon p-2 rounded"
+                  ><i class="fas fs-5 fa-user text-white-50"></i
+                ></a>
+              </li>
+              <li>
+                <button
+                  class="btn btn-md rounded-pill creat-btn me-5"
+                  type="submit"
+                >
+                  Creat New
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="subheader bg-white">
+      <div class="d-flex container flex-wrap flex-sm-nowrap">
+        <div class="d-none d-lg-flex align-items-center flex-wrap">
+          <a href="#"
+            ><img
+              class="w-100"
+              src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/logos/logo-4.svg"
+              alt=""
+          /></a>
+        </div>
+        <div class="d-flex sec-1">
+          <span class="p-4 text-center">
+            <h4 class="text-dark fw-bold fs-4 mb-1">My Account</h4>
+            <h2 class="text-secondary fs-6">Profile & Account</h2>
+          </span>
+          <div class="divider bg-secondary my-auto"></div>
+          <span class="p-4 text-center">
+            <h4 class="text-dark fw-bold fs-4 mb-1">My Account</h4>
+            <h2 class="text-secondary fs-6">Profile & Account</h2>
+          </span>
+          <div class="divider bg-secondary my-auto"></div>
+          <span class="p-4 text-center">
+            <h4 class="text-dark fw-bold fs-4 mb-1">My Account</h4>
+            <h2 class="text-secondary fs-6">Profile & Account</h2>
+          </span>
+          <div class="divider bg-secondary my-auto"></div>
+          <span class="p-4 text-center">
+            <h4 class="text-dark fw-bold fs-4 mb-1">My Account</h4>
+            <h2 class="text-secondary fs-6">Profile & Account</h2>
+          </span>
+          <div class="divider bg-secondary my-auto"></div>
+          <span class="p-4 text-center">
+            <h4 class="text-dark fw-bold fs-4 mb-1">My Account</h4>
+            <h2 class="text-secondary fs-6">Profile & Account</h2>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="header-btn d-lg-flex justify-content-between container mt-3">
+      <span class="d-flex">
+        <h3 class="text-dark fs-4 me-1 mt-1">Invoice</h3>
+        <a class="text-secondary mt-2 mx-2" href="#!">Pages</a>
+        <a class="text-secondary mt-2 mx-2" href="#!">Invoice 1</a>
+      </span>
+      <span>
+        <button class="btn bg-white text-secondary fw-bold fs-6 px-5 me-3">
+          <svg
+            class="me-2"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="24px"
+            height="24px"
+            viewBox="0 0 24 24"
+            version="1.1"
+          >
+            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <polygon points="0 0 24 0 24 24 0 24"></polygon>
+              <path
+                d="M18,8 L16,8 C15.4477153,8 15,7.55228475 15,7 C15,6.44771525 15.4477153,6 16,6 L18,6 L18,4 C18,3.44771525 18.4477153,3 19,3 C19.5522847,3 20,3.44771525 20,4 L20,6 L22,6 C22.5522847,6 23,6.44771525 23,7 C23,7.55228475 22.5522847,8 22,8 L20,8 L20,10 C20,10.5522847 19.5522847,11 19,11 C18.4477153,11 18,10.5522847 18,10 L18,8 Z M9,11 C6.790861,11 5,9.209139 5,7 C5,4.790861 6.790861,3 9,3 C11.209139,3 13,4.790861 13,7 C13,9.209139 11.209139,11 9,11 Z"
+                fill="#000000"
+                fill-rule="nonzero"
+                opacity="0.3"
+              ></path>
+              <path
+                d="M0.00065168429,20.1992055 C0.388258525,15.4265159 4.26191235,13 8.98334134,13 C13.7712164,13 17.7048837,15.2931929 17.9979143,20.2 C18.0095879,20.3954741 17.9979143,21 17.2466999,21 C13.541124,21 8.03472472,21 0.727502227,21 C0.476712155,21 -0.0204617505,20.45918 0.00065168429,20.1992055 Z"
+                fill="#000000"
+                fill-rule="nonzero"
+              ></path>
+            </g>
+          </svg>
+          Add Member
+        </button>
+        <button class="btn bg-success text-white fw-bold fs-6 px-5">
+          <svg
+            class="me-2"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="24px"
+            height="24px"
+            viewBox="0 0 24 24"
+            version="1.1"
+          >
+            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <polygon points="0 0 24 0 24 24 0 24"></polygon>
+              <path
+                d="M5.85714286,2 L13.7364114,2 C14.0910962,2 14.4343066,2.12568431 14.7051108,2.35473959 L19.4686994,6.3839416 C19.8056532,6.66894833 20,7.08787823 20,7.52920201 L20,20.0833333 C20,21.8738751 19.9795521,22 18.1428571,22 L5.85714286,22 C4.02044787,22 4,21.8738751 4,20.0833333 L4,3.91666667 C4,2.12612489 4.02044787,2 5.85714286,2 Z"
+                fill="#000000"
+                fill-rule="nonzero"
+                opacity="0.3"
+              ></path>
+              <rect
+                fill="#000000"
+                x="6"
+                y="11"
+                width="9"
+                height="2"
+                rx="1"
+              ></rect>
+              <rect
+                fill="#000000"
+                x="6"
+                y="15"
+                width="5"
+                height="2"
+                rx="1"
+              ></rect>
+            </g>
+          </svg>
+          New Report
+        </button>
+      </span>
+    </div>
+    <section class="container mt-3">
+      <div class="card invoice-block border-0">
+        <div
+          class="card-haeder py-1 pt-3 px-5"
+          style="
+            background-image: url(https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/misc/bg-3.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+          "
+        >
+          <div class="d-lg-flex justify-content-between align-items-center p-5">
+            <span
+              ><h1 class="display-6 text-white fw-bolder mb-5">
+                INVOICE
+              </h1></span
+            >
+            <span>
+              <img
+                class="mb-2"
+                src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/logos/logo-2.svg"
+                alt=""
+              />
+              <p class="text-white-50 fw-50">
+                Cecilia Chapman, 711-2880 Nulla St, Mankato <br />
+                Mississippi 96522
+              </p>
+            </span>
+          </div>
+          <hr />
+          <div class="container px-5 text-center">
+            <table class="table table-borderless">
+              <thead>
+                <tr>
+                  <th scope="col" class="text-white fw-bold lh-0">Date</th>
+                  <th scope="col" class="text-white fw-bold lh-0">
+                    INVOICE NO.
+                  </th>
+                  <th scope="col" class="text-white fw-bold lh-0">
+                    INVOICE TO.
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="fw-50 text-white-50">Dec 12, 2017</td>
+                  <td class="fw-50 text-white-50">GS 000014</td>
+                  <td class="fw-50 text-white-50">
+                    Iris Watson, P.O. Box 283 8562 Fusce RD. <br />
+                    Fredrick Nebraska 20620
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="px-5">
+            <table class="table table-borderless mt-5">
+              <thead class="border-bottom">
+                <tr class="mb-2">
+                  <th
+                    scope="col"
+                    class="text-secondary fw-bold lh-0 fs-6 fw-50 pb-4"
+                  >
+                    DESCRIPTION
+                  </th>
+                  <th
+                    scope="col"
+                    class="text-secondary fw-bold lh-0 fs-6 fw-50 pb-4"
+                  >
+                    HOURS
+                  </th>
+                  <th
+                    scope="col"
+                    class="text-secondary fw-bold lh-0 fs-6 fw-50 pb-4"
+                  >
+                    RATE
+                  </th>
+                  <th
+                    scope="col"
+                    class="text-secondary fw-bold lh-0 fs-6 fw-50 pb-4"
+                  >
+                    AMOUNT
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="my-1">
+                  <td class="fw-50 text-dark">Creative Design</td>
+                  <td class="fw-50 text-dark">80</td>
+                  <td class="fw-50 text-dark">$40.00</td>
+                  <td class="fw-50 text-danger">$3200.00</td>
+                </tr>
+                <tr class="my-1">
+                  <td class="fw-50 text-dark">Front-End Development</td>
+                  <td class="fw-50 text-dark">120</td>
+                  <td class="fw-50 text-dark">$40.00</td>
+                  <td class="fw-50 text-danger">$4800.00</td>
+                </tr>
+                <tr class="my-1">
+                  <td class="fw-50 text-dark">Back-End Development</td>
+                  <td class="fw-50 text-dark">210</td>
+                  <td class="fw-50 text-dark">$60.00</td>
+                  <td class="fw-50 text-danger">$12600.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="px-5 bg-light pt-5">
+            <div class="d-lg-flex justify-content-between">
+              <div class="transfer">
+                <h6 class="fw-bold text-dark">BANK TRANSFER</h6>
+                <span class="d-flex lh-min mb-2 justify-content-between mt-3">
+                  <p class="fw-50 text-dark me-5">Account Name:</p>
+                  <p class="fw-normal text-dark">Barclays UK</p>
+                </span>
+                <span
+                  class="d-flex lh-min mb-2 justify-content-between align-items-center"
+                >
+                  <p class="fw-50 text-dark me-5">Account Number:</p>
+                  <p class="fw-normal text-dark">1234567890934</p>
+                </span>
+                <span class="d-flex lh-min mb-2 justify-content-between">
+                  <p class="fw-50 text-dark me-5">Code:</p>
+                  <p class="fw-normal text-dark">BARC0032UK</p>
+                </span>
+              </div>
+              <div class="amount me-5 text-center">
+                <h6 class="fw-bold text-dark">TOTAL AMOUNT</h6>
+                <p class="fs-2 lh-1 fw-bolder text-danger">$20.600.00</p>
+                <p class="fw-normal text-dark lh-1">Taxes Included</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer px-5 border-0 bg-white p-4 rounded">
+          <div class="d-flex justify-content-between px-3">
+            <button class="btn btn-main">Download Invoice</button>
+            <button class="btn btn-success">Print Invoice</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-white mt-3 pt-3">
+      <div class="d-lg-flex justify-content-between container">
+        <span class="d-flex fs-5"
+          ><p class="text-muted me-2">2021©</p>
+          <a href="#!" class="text-dark"> Keenthemes</a>
+        </span>
+        <span class="d-flex">
+          <a href="#!" class="text-muted me-4 fs-5">About</a>
+          <a href="#!" class="text-muted me-4 fs-5">Team</a>
+          <a href="#!" class="text-muted me-4 fs-5">Contact</a>
+        </span>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

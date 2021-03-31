@@ -1,0 +1,65 @@
+@import "_header";
+@import "_essentials";
+@import "_footer";
+@import "_fonts";
+
+.chart {
+  .card-header {
+    .chart-header {
+      a {
+        color: black;
+        &:hover {
+          color: #0bb783;
+        }
+        &:focus {
+          background: #0bb783;
+          color: white;
+        }
+      }
+    }
+  }
+}
+.quic-action {
+  &:hover {
+    i {
+      color: #0bb783 !important;
+    }
+    background-color: #d7f9ef;
+  }
+  &:focus {
+    i {
+      color: #0bb783 !important;
+    }
+    background-color: #d7f9ef;
+  }
+}
+.slide-card {
+  .card-header {
+    span {
+      margin-top: -12px;
+      padding: 10px;
+      border-radius: 8px;
+      font-weight: 600;
+      color: #0bb783 !important;
+      background-color: #d7f9ef !important;
+    }
+    ul {
+      li {
+        margin: 0 3px;
+        a {
+          color: #7e8299;
+          background-color: #f3f6f9;
+          border-color: #f3f6f9;
+          padding-right: 10px !important;
+          border-radius: 8px;
+          font-size: 12px;
+          &:hover {
+            color: #7e8299;
+            background-color: #e4e6ef;
+            border-color: #e4e6ef;
+          }
+        }
+      }
+    }
+  }
+}

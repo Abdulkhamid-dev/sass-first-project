@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/add-user.css" />
+  </head>
+  <body>
+    <header class="bg-header">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light bg-header">
+        <div class="container-fluid bg-header px-5">
+          <a
+            class="navbar-brand text-white fs-5 fw-normal nav-color d-lg-none"
+            aria-current="page"
+            href="#"
+            ><img
+              src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/logos/logo-4.svg"
+              alt=""
+          /></a>
+          <button
+            class="navbar-toggler bg-white"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse container"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item mx-4">
+                <a
+                  class="nav-link text-white fs-5 fw-normal nav-color"
+                  aria-current="page"
+                  href="#"
+                  >Dashboard</a
+                >
+              </li>
+              <li class="nav-item mx-4">
+                <a
+                  class="nav-link text-white fs-5 fw-normal nav-color"
+                  aria-current="page"
+                  href="#"
+                  >Features</a
+                >
+              </li>
+              <li class="nav-item mx-4">
+                <a class="nav-link text-white fs-5 fw-normal nav-color" href="#"
+                  >Builder</a
+                >
+              </li>
+              <li class="nav-item mx-4 dropdown">
+                <a
+                  class="nav-link text-white fs-5 fw-normal nav-color dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Apps
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item mx-4">
+                <a
+                  class="nav-link text-white fs-5 fw-normal"
+                  href="#"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >Pages</a
+                >
+              </li>
+            </ul>
+            <ul class="icons-menu d-flex mt-3">
+              <li class="icons mx-1 mt-2">
+                <a href="#!" class="a-icon p-2 rounded"
+                  ><i class="fas fs-5 fa-search text-white-50"></i
+                ></a>
+              </li>
+              <li class="icons mx-1 mt-2">
+                <a href="#!" class="a-icon p-2 rounded"
+                  ><i class="fas fs-5 fa-signal text-white-50"></i
+                ></a>
+              </li>
+              <li class="icons mx-1 mt-2">
+                <a href="#!" class="a-icon p-2 rounded"
+                  ><i class="fas fs-5 fa-bars text-white-50"></i
+                ></a>
+              </li>
+              <li class="icons mx-1 mt-2">
+                <a href="#!" class="a-icon p-2 rounded"
+                  ><i class="far fs-5 fa-comment-alt text-white-50"></i
+                ></a>
+              </li>
+              <li class="icons mx-1 mt-2">
+                <a href="#!" class="a-icon p-2 rounded"
+                  ><i class="fas fs-5 fa-user text-white-50"></i
+                ></a>
+              </li>
+              <li>
+                <button
+                  class="btn btn-md rounded-pill creat-btn me-5"
+                  type="submit"
+                >
+                  Creat New
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="subheader bg-white pe-5">
+      <div class="d-flex container flex-wrap flex-sm-nowrap">
+        <div class="d-none d-lg-flex align-items-center flex-wrap">
+          <a href="#"
+            ><img
+              class="subheader-logo"
+              src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/logos/logo-4.svg"
+              alt=""
+          /></a>
+        </div>
+        <div class="d-flex sec-1">
+          <span class="p-4 text-center subheader-span">
+            <h4 class="text-dark fw-bold fs-4 mb-1">My Account</h4>
+            <h2 class="text-secondary fs-6">Profile & Account</h2>
+          </span>
+          <div class="divider bg-secondary my-auto"></div>
+          <span class="p-4 text-center subheader-span">
+            <h4 class="text-dark fw-bold fs-4 mb-1">Orders</h4>
+            <h2 class="text-secondary fs-6">My Order List</h2>
+          </span>
+          <div class="divider bg-secondary my-auto"></div>
+          <span class="p-4 text-center subheader-span">
+            <h4 class="text-dark fw-bold fs-4 mb-1">Deposits</h4>
+            <h2 class="text-secondary fs-6">Account & Reports</h2>
+          </span>
+          <div class="divider bg-secondary my-auto"></div>
+          <span class="p-4 text-center subheader-span">
+            <h4 class="text-dark fw-bold fs-4 mb-1">Transfers</h4>
+            <h2 class="text-secondary fs-6">Transactions History</h2>
+          </span>
+          <div class="divider bg-secondary my-auto"></div>
+          <span class="p-4 text-center subheader-span">
+            <h4 class="text-dark fw-bold fs-4 mb-1">Statements</h4>
+            <h2 class="text-secondary fs-6">Dashboard & Reports</h2>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="header-btn d-lg-flex justify-content-between container mt-3">
+      <span class="d-flex align-items-center">
+        <h3 class="text-dark fs-4 me-1">Add</h3>
+        <a class="text-secondary mx-2" href="#!">Apps</a>
+        <a class="text-secondary mx-2" href="#!">Users</a>
+        <a class="text-secondary mx-2" href="#!">Add User</a>
+      </span>
+      <span>
+        <button class="btn bg-white text-secondary fw-bold fs-6 px-5 me-3">
+          <svg
+            class="me-2"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="24px"
+            height="24px"
+            viewBox="0 0 24 24"
+            version="1.1"
+          >
+            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <polygon points="0 0 24 0 24 24 0 24"></polygon>
+              <path
+                d="M18,8 L16,8 C15.4477153,8 15,7.55228475 15,7 C15,6.44771525 15.4477153,6 16,6 L18,6 L18,4 C18,3.44771525 18.4477153,3 19,3 C19.5522847,3 20,3.44771525 20,4 L20,6 L22,6 C22.5522847,6 23,6.44771525 23,7 C23,7.55228475 22.5522847,8 22,8 L20,8 L20,10 C20,10.5522847 19.5522847,11 19,11 C18.4477153,11 18,10.5522847 18,10 L18,8 Z M9,11 C6.790861,11 5,9.209139 5,7 C5,4.790861 6.790861,3 9,3 C11.209139,3 13,4.790861 13,7 C13,9.209139 11.209139,11 9,11 Z"
+                fill="#000000"
+                fill-rule="nonzero"
+                opacity="0.3"
+              ></path>
+              <path
+                d="M0.00065168429,20.1992055 C0.388258525,15.4265159 4.26191235,13 8.98334134,13 C13.7712164,13 17.7048837,15.2931929 17.9979143,20.2 C18.0095879,20.3954741 17.9979143,21 17.2466999,21 C13.541124,21 8.03472472,21 0.727502227,21 C0.476712155,21 -0.0204617505,20.45918 0.00065168429,20.1992055 Z"
+                fill="#000000"
+                fill-rule="nonzero"
+              ></path>
+            </g>
+          </svg>
+          Add Member
+        </button>
+        <button class="btn bg-success text-white fw-bold fs-6 px-5">
+          <svg
+            class="me-2"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="24px"
+            height="24px"
+            viewBox="0 0 24 24"
+            version="1.1"
+          >
+            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <polygon points="0 0 24 0 24 24 0 24"></polygon>
+              <path
+                d="M5.85714286,2 L13.7364114,2 C14.0910962,2 14.4343066,2.12568431 14.7051108,2.35473959 L19.4686994,6.3839416 C19.8056532,6.66894833 20,7.08787823 20,7.52920201 L20,20.0833333 C20,21.8738751 19.9795521,22 18.1428571,22 L5.85714286,22 C4.02044787,22 4,21.8738751 4,20.0833333 L4,3.91666667 C4,2.12612489 4.02044787,2 5.85714286,2 Z"
+                fill="#000000"
+                fill-rule="nonzero"
+                opacity="0.3"
+              ></path>
+              <rect
+                fill="#000000"
+                x="6"
+                y="11"
+                width="9"
+                height="2"
+                rx="1"
+              ></rect>
+              <rect
+                fill="#000000"
+                x="6"
+                y="15"
+                width="5"
+                height="2"
+                rx="1"
+              ></rect>
+            </g>
+          </svg>
+          New Report
+        </button>
+      </span>
+    </div>
+    <section class="container mt-3">
+      <div class="row">
+        <div class="col-6 p-2 bg-white rounded d-flex">
+          <i class="fas fa-user text-success fs-3 mt-2 me-3 ms-4"></i>
+          <span class="text-success lh-1">
+            <h5>Profile</h5>
+            <p>User's Personal Information</p>
+          </span>
+        </div>
+        <div class="col-6 p-2 bg-white rounded disabled d-flex rounded">
+          <i class="fas fa-shield-alt text-muted fs-3 mt-2 me-3 ms-4"></i>
+          <span class="text-muted lh-1">
+            <h5>Account</h5>
+            <p>User's Account & Settings</p>
+          </span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 p-2 bg-white rounded disabled d-flex rounded">
+          <i class="fas fa-thumbtack text-muted fs-3 mt-2 me-3 ms-4"></i>
+          <span class="text-muted lh-1">
+            <h5>Address</h5>
+            <p>User's Shipping Address</p>
+          </span>
+        </div>
+        <div class="col-6 p-2 bg-white rounded disabled d-flex rounded">
+          <i class="fas fa-thumbs-up text-muted fs-3 mt-2 me-3 ms-4"></i>
+          <span class="text-muted lh-1">
+            <h5>Submission</h5>
+            <p>Review and Submit</p>
+          </span>
+        </div>
+      </div>
+      <div
+        class="users-profile bg-white p-5 rounded mt-3 d-flex justify-content-center"
+      >
+        <form action="#!" class="mx-5">
+          <div class="mb-3 row">
+            <label for="photo" class="col-sm-2 col-form-label">Photo</label>
+            <div class="col-sm-10">
+              <input
+                type="image"
+                width="120px"
+                src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/users/150-1.jpg"
+                class="form rounded border border-2 border-white shadow-lg"
+                id="photo"
+              />
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="name" class="col-sm-2 col-form-label">First Name</label>
+            <div class="col-sm-10">
+              <input
+                type="text"
+                class="form-control-plaintext p-2 w-45"
+                id="name"
+                placeholder="First Name"
+              />
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="last-name" class="col-sm-2 col-form-label"
+              >Last Name</label
+            >
+            <div class="col-sm-10">
+              <input
+                type="text"
+                class="form-control-plaintext p-2 w-45"
+                id="last-name"
+                placeholder="Last Name"
+              />
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="company" class="col-sm-2 col-form-label"
+              >Company Name</label
+            >
+            <div class="col-sm-10">
+              <input
+                type="text"
+                class="form-control-plaintext p-2 w-45"
+                id="company"
+                value="Loop Inc."
+              />
+              <p class="input-text mt-1">
+                If you want your invoices addressed to a company. Leave blank to
+                use your full name.
+              </p>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="phone" class="col-sm-2 col-form-label"
+              >Contact Phone</label
+            >
+            <div class="col-sm-10">
+              <div class="input-group">
+                <span
+                  class="input-group-text border-0 bg-input"
+                  id="basic-addon1"
+                  ><i class="fas fa-phone-alt text-muted"></i
+                ></span>
+                <input
+                  type="text"
+                  class="form-control border-0 text-muted bg-input"
+                  placeholder="Phone"
+                  id="phone"
+                />
+              </div>
+              <p class="input-text mt-1">
+                Enter valid US phone number(e.g: 5678967456).
+              </p>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="email" class="col-sm-2 col-form-label"
+              >Email Address</label
+            >
+            <div class="col-sm-10">
+              <div class="input-group">
+                <span
+                  class="input-group-text border-0 bg-input"
+                  id="basic-addon1"
+                  ><i class="fas fa-at text-muted"></i
+                ></span>
+                <input
+                  type="text"
+                  class="form-control border-0 text-muted bg-input"
+                  value="test@example.com"
+                  id="email"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="site" class="col-sm-2 col-form-label"
+              >Company Site</label
+            >
+            <div class="col-sm-10">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control border-0 text-muted bg-input"
+                  value="loop"
+                  id="site"
+                />
+                <span
+                  class="input-group-text border-0 bg-input"
+                  id="basic-addon1"
+                  >.com</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-end">
+            <button class="btn btn-success" type="submit">
+              Next<i class="fas fa-arrow-right ms-2"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer class="bg-white mt-3 pt-3">
+      <div class="d-lg-flex justify-content-between container">
+        <span class="d-flex fs-5"
+          ><p class="text-muted me-2">2021©</p>
+          <a href="#!" class="text-dark"> Keenthemes</a>
+        </span>
+        <span class="d-flex">
+          <a href="#!" class="text-muted me-4 fs-5">About</a>
+          <a href="#!" class="text-muted me-4 fs-5">Team</a>
+          <a href="#!" class="text-muted me-4 fs-5">Contact</a>
+        </span>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

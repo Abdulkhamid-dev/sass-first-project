@@ -1,0 +1,26 @@
+@import "_header";
+@import "_footer";
+@import "_essentials";
+.card {
+  border-radius: 8px !important;
+}
+pre {
+  overflow: scroll;
+  //   margin-left: -150px !important;
+}
+.copy {
+  &:focus {
+    .fa-clone {
+      display: none !important;
+    }
+    .fa-check {
+      display: block !important;
+      color: #0bb783;
+    }
+  }
+  &:hover {
+    .fa-clone {
+      color: #0bb783 !important;
+    }
+  }
+}

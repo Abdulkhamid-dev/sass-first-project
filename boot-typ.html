@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/boot-typ.css" />
+  </head>
+  <body>
+    <header class="bg-header">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light bg-header">
+        <div class="container-fluid bg-header px-5">
+          <a
+            class="navbar-brand text-white fs-5 fw-normal nav-color d-lg-none"
+            aria-current="page"
+            href="#"
+            ><img
+              src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/logos/logo-4.svg"
+              alt=""
+          /></a>
+          <button
+            class="navbar-toggler bg-white"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse container"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item mx-4">
+                <a
+                  class="nav-link text-white fs-5 fw-normal nav-color"
+                  aria-current="page"
+                  href="#"
+                  >Dashboard</a
+                >
+              </li>
+              <li class="nav-item mx-4">
+                <a
+                  class="nav-link text-white fs-5 fw-normal nav-color"
+                  aria-current="page"
+                  href="#"
+                  >Features</a
+                >
+              </li>
+              <li class="nav-item mx-4">
+                <a class="nav-link text-white fs-5 fw-normal nav-color" href="#"
+                  >Builder</a
+                >
+              </li>
+              <li class="nav-item mx-4 dropdown">
+                <a
+                  class="nav-link text-white fs-5 fw-normal nav-color dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Apps
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item mx-4">
+                <a
+                  class="nav-link text-white fs-5 fw-normal"
+                  href="#"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >Pages</a
+                >
+              </li>
+            </ul>
+            <ul class="icons-menu d-flex mt-3">
+              <li class="icons mx-1 mt-2">
+                <a href="#!" class="a-icon p-2 rounded"
+                  ><i class="fas fs-5 fa-search text-white-50"></i
+                ></a>
+              </li>
+              <li class="icons mx-1 mt-2">
+                <a href="#!" class="a-icon p-2 rounded"
+                  ><i class="fas fs-5 fa-signal text-white-50"></i
+                ></a>
+              </li>
+              <li class="icons mx-1 mt-2">
+                <a href="#!" class="a-icon p-2 rounded"
+                  ><i class="fas fs-5 fa-bars text-white-50"></i
+                ></a>
+              </li>
+              <li class="icons mx-1 mt-2">
+                <a href="#!" class="a-icon p-2 rounded"
+                  ><i class="far fs-5 fa-comment-alt text-white-50"></i
+                ></a>
+              </li>
+              <li class="icons mx-1 mt-2">
+                <a href="#!" class="a-icon p-2 rounded"
+                  ><i class="fas fs-5 fa-user text-white-50"></i
+                ></a>
+              </li>
+              <li>
+                <button
+                  class="btn btn-md rounded-pill creat-btn me-5"
+                  type="submit"
+                >
+                  Creat New
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="subheader bg-white pe-5">
+      <div class="d-flex container flex-wrap flex-sm-nowrap">
+        <div class="d-none d-lg-flex align-items-center flex-wrap">
+          <a href="#"
+            ><img
+              class="subheader-logo"
+              src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/logos/logo-4.svg"
+              alt=""
+          /></a>
+        </div>
+        <div class="d-flex sec-1">
+          <span class="p-4 text-center subheader-span">
+            <h4 class="text-dark fw-bold fs-4 mb-1">My Account</h4>
+            <h2 class="text-secondary fs-6">Profile & Account</h2>
+          </span>
+          <div class="divider bg-secondary my-auto"></div>
+          <span class="p-4 text-center subheader-span">
+            <h4 class="text-dark fw-bold fs-4 mb-1">Orders</h4>
+            <h2 class="text-secondary fs-6">My Order List</h2>
+          </span>
+          <div class="divider bg-secondary my-auto"></div>
+          <span class="p-4 text-center subheader-span">
+            <h4 class="text-dark fw-bold fs-4 mb-1">Deposits</h4>
+            <h2 class="text-secondary fs-6">Account & Reports</h2>
+          </span>
+          <div class="divider bg-secondary my-auto"></div>
+          <span class="p-4 text-center subheader-span">
+            <h4 class="text-dark fw-bold fs-4 mb-1">Transfers</h4>
+            <h2 class="text-secondary fs-6">Transactions History</h2>
+          </span>
+          <div class="divider bg-secondary my-auto"></div>
+          <span class="p-4 text-center subheader-span">
+            <h4 class="text-dark fw-bold fs-4 mb-1">Statements</h4>
+            <h2 class="text-secondary fs-6">Dashboard & Reports</h2>
+          </span>
+        </div>
+      </div>
+    </div>
+    <section class="container">
+      <div class="header-btn d-lg-flex justify-content-between container mt-3">
+        <span class="d-flex align-items-center">
+          <h3 class="text-dark fs-4 me-1">Typography</h3>
+          <a class="text-secondary mx-2" href="#!">Features</a>
+          <a class="text-secondary mx-2" href="#!">Bootstrap</a>
+          <a class="text-secondary mx-2" href="#!">Typography</a>
+        </span>
+        <span>
+          <button class="btn bg-white text-secondary fw-bold fs-6 px-5 me-3">
+            <svg
+              class="me-2"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="24px"
+              height="24px"
+              viewBox="0 0 24 24"
+              version="1.1"
+            >
+              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <polygon points="0 0 24 0 24 24 0 24"></polygon>
+                <path
+                  d="M18,8 L16,8 C15.4477153,8 15,7.55228475 15,7 C15,6.44771525 15.4477153,6 16,6 L18,6 L18,4 C18,3.44771525 18.4477153,3 19,3 C19.5522847,3 20,3.44771525 20,4 L20,6 L22,6 C22.5522847,6 23,6.44771525 23,7 C23,7.55228475 22.5522847,8 22,8 L20,8 L20,10 C20,10.5522847 19.5522847,11 19,11 C18.4477153,11 18,10.5522847 18,10 L18,8 Z M9,11 C6.790861,11 5,9.209139 5,7 C5,4.790861 6.790861,3 9,3 C11.209139,3 13,4.790861 13,7 C13,9.209139 11.209139,11 9,11 Z"
+                  fill="#000000"
+                  fill-rule="nonzero"
+                  opacity="0.3"
+                ></path>
+                <path
+                  d="M0.00065168429,20.1992055 C0.388258525,15.4265159 4.26191235,13 8.98334134,13 C13.7712164,13 17.7048837,15.2931929 17.9979143,20.2 C18.0095879,20.3954741 17.9979143,21 17.2466999,21 C13.541124,21 8.03472472,21 0.727502227,21 C0.476712155,21 -0.0204617505,20.45918 0.00065168429,20.1992055 Z"
+                  fill="#000000"
+                  fill-rule="nonzero"
+                ></path>
+              </g>
+            </svg>
+            Add Member
+          </button>
+          <button class="btn bg-success text-white fw-bold fs-6 px-5">
+            <svg
+              class="me-2"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="24px"
+              height="24px"
+              viewBox="0 0 24 24"
+              version="1.1"
+            >
+              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <polygon points="0 0 24 0 24 24 0 24"></polygon>
+                <path
+                  d="M5.85714286,2 L13.7364114,2 C14.0910962,2 14.4343066,2.12568431 14.7051108,2.35473959 L19.4686994,6.3839416 C19.8056532,6.66894833 20,7.08787823 20,7.52920201 L20,20.0833333 C20,21.8738751 19.9795521,22 18.1428571,22 L5.85714286,22 C4.02044787,22 4,21.8738751 4,20.0833333 L4,3.91666667 C4,2.12612489 4.02044787,2 5.85714286,2 Z"
+                  fill="#000000"
+                  fill-rule="nonzero"
+                  opacity="0.3"
+                ></path>
+                <rect
+                  fill="#000000"
+                  x="6"
+                  y="11"
+                  width="9"
+                  height="2"
+                  rx="1"
+                ></rect>
+                <rect
+                  fill="#000000"
+                  x="6"
+                  y="15"
+                  width="5"
+                  height="2"
+                  rx="1"
+                ></rect>
+              </g>
+            </svg>
+            New Report
+          </button>
+        </span>
+      </div>
+      <div class="card py-1 mt-3 border-0">
+        <div class="card-body p-4 d-flex align-items-center">
+          <span class="p-3 mb-1 main-bg rounded-pill main-color">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="24px"
+              height="24px"
+              viewBox="0 0 24 24"
+              version="1.1"
+            >
+              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <rect x="0" y="0" width="24" height="24"></rect>
+                <path
+                  d="M7.07744993,12.3040451 C7.72444571,13.0716094 8.54044565,13.6920474 9.46808594,14.1079953 L5,23 L4.5,18 L7.07744993,12.3040451 Z M14.5865511,14.2597864 C15.5319561,13.9019016 16.375416,13.3366121 17.0614026,12.6194459 L19.5,18 L19,23 L14.5865511,14.2597864 Z M12,3.55271368e-14 C12.8284271,3.53749572e-14 13.5,0.671572875 13.5,1.5 L13.5,4 L10.5,4 L10.5,1.5 C10.5,0.671572875 11.1715729,3.56793164e-14 12,3.55271368e-14 Z"
+                  fill="#000000"
+                  opacity="0.3"
+                ></path>
+                <path
+                  d="M12,10 C13.1045695,10 14,9.1045695 14,8 C14,6.8954305 13.1045695,6 12,6 C10.8954305,6 10,6.8954305 10,8 C10,9.1045695 10.8954305,10 12,10 Z M12,13 C9.23857625,13 7,10.7614237 7,8 C7,5.23857625 9.23857625,3 12,3 C14.7614237,3 17,5.23857625 17,8 C17,10.7614237 14.7614237,13 12,13 Z"
+                  fill="#000000"
+                  fill-rule="nonzero"
+                ></path>
+              </g>
+            </svg>
+          </span>
+          <p class="fw-50 text-muted ms-3">
+            Extended Bootstrap typography, including global settings, headings,
+            body text, lists. For more info lease visit
+            <a
+              href="https://getbootstrap.com/docs/4.6/content/typography/"
+              class="main-color ms-1"
+            >
+              Bootstrap Typography Documentation.</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+          <div class="card border-0 mt-3">
+            <div class="card-header bg-white p-3">
+              <h3 class="text-dark fs-5">Text Colors</h3>
+            </div>
+            <div class="card-body p-3">
+              <p class="">Standard and custom Bootstrap color utilities:</p>
+              <div class="text-color border border-3 rounded border-light">
+                <ul>
+                  <li class="fw-50 my-1 ps-1 text-primary">text-primary</li>
+                  <li class="fw-50 my-1 ps-1 text-danger">text-danger</li>
+                  <li class="fw-50 my-1 ps-1 text-success">text-success</li>
+                  <li class="fw-50 my-1 ps-1 text-secondary">text-secondary</li>
+                  <li class="fw-50 my-1 ps-1 text-warning">text-warning</li>
+                  <li class="fw-50 my-1 ps-1 text-info">text-info</li>
+                  <li class="fw-50 my-1 ps-1 text-white bg-dark">text-white</li>
+                  <li class="fw-50 my-1 ps-1 text-white-50 bg-dark">
+                    text-white-50
+                  </li>
+                  <li class="fw-50 my-1 ps-1 text-light bg-dark">text-light</li>
+                  <li class="fw-50 my-1 ps-1 text-dark">text-dark</li>
+                </ul>
+                <ul class="bg-light">
+                  <li class="d-flex justify-content-end mb-2">
+                    <a href="#!" class="copy p-2"><i class="far fa-clone  text-secondary"></i><i class="fas fa-check d-none p-1"></i></a>
+                  </li>
+                  <li>
+                    <pre>
+                    <code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text-primary<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>.text-primary<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+                      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text-secondary<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>.text-secondary<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+                      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text-success<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>.text-success<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+                      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text-danger<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>.text-danger<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+                      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text-warning<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>.text-warning<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+                      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text-info<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>.text-info<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+                      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text-light bg-dark<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>.text-light<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+                      
+                      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text-dark<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>.text-dark<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+                      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text-dark-75<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>.text-dark-75<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+                      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text-dark-65<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>.text-dark-65<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+                      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text-dark-50<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>.text-dark-50<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+                      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text-dark-25<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>.text-dark-25<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+                      
+                      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text-body<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>.text-body<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+                      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text-muted<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>.text-muted<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+                      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text-white bg-dark<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>.text-white<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+                      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text-black-50<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>.text-black-50<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+                      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text-white-50 bg-dark<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>.text-white-50<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></code>
+                  </pre>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card mt-3 border-0">
+            <div class="card-header bg-white p-3">
+              <h3 class="text-dark fs-5">Headings</h3>
+            </div>
+            <div class="card-body p-3">
+              <p>
+                All HTML headings,<span class="text-danger">h1</span> through
+                <span class="text-danger">h6</span> are available:
+              </p>
+              <div class="text-color border border-3 rounded border-light">
+                <ul>
+                  <li><h1>h1. Heading 1</h1></li>
+                  <li><h2>h2. Heading 2</h2></li>
+                  <li><h3>h3. Heading 3</h3></li>
+                  <li><h4>h4. Heading 4</h4></li>
+                  <li><h5>h5. Heading 5</h5></li>
+                  <li><h6>h6. Heading 6</h6></li>
+                </ul>
+                <ul class="bg-light">
+                  <li class="d-flex justify-content-end mb-2">
+                    <a href="#!" class="copy p-2"><i class="far fa-clone  text-secondary"></i><i class="fas fa-check d-none p-1"></i></a>
+                  </li>
+                  <pre
+                    class="language-html"
+                    style="overflow: scroll !important"
+                  >
+                      <code class=" language-htm" style="overflow: scroll !important;"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>h1. Heading 1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+                      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;</span></span>h2. Heading 2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span>
+                      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span class="token punctuation">&gt;</span></span>h3. Heading 3<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">&gt;</span></span>
+                      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h4</span><span class="token punctuation">&gt;</span></span>h4. Heading 4<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h4</span><span class="token punctuation">&gt;</span></span>
+                      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h5</span><span class="token punctuation">&gt;</span></span>h5. Heading 5<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h5</span><span class="token punctuation">&gt;</span></span>
+                      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h6</span><span class="token punctuation">&gt;</span></span>h6. Heading 6<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h6</span><span class="token punctuation">&gt;</span></span>
+                      
+                      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>h1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>h1. Heading 1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>h2<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>h2. Heading 2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>h3<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>h3. Heading 3<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>h4<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>h4. Heading 4<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>h5<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>h5. Heading 5<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>h6<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>h6. Heading 6<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+                </ul>
+              </div>
+              <p class="mt-3">
+                Use the included utility classes to recreate the small secondary
+                heading text:
+              </p>
+              <div class="text-color border border-3 rounded border-light">
+                <ul>
+                  <li>
+                    <h3>
+                      Fancy display heading
+                      <small class="text-muted"
+                        >With faded secondary text</small
+                      >
+                    </h3>
+                  </li>
+                </ul>
+                <ul class="bg-light">
+                  <li class="d-flex justify-content-end mb-2">
+                    <a href="#!" class="copy p-2"><i class="far fa-clone  text-secondary"></i><i class="fas fa-check d-none p-1"></i></a>
+                  </li>
+                  <pre
+                    class="language-html"
+                  ><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span class="token punctuation">&gt;</span></span> Fancy display heading <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>small</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text-muted<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>With faded secondary text<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>small</span><span class="token punctuation">&gt;</span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">&gt;</span></span></code></pre>
+                </ul>
+              </div>
+              <p class="mt-3">
+                Larger, slightly more opinionated heading styles:
+              </p>
+              <div class="text-color border border-3 rounded border-light">
+                <ul>
+                  <li class="display-1 my-2">Display 1</li>
+                  <li class="display-2 my-2">Display 2</li>
+                  <li class="display-3 my-2">Display 3</li>
+                  <li class="display-4 my-2">Display 4</li>
+                  <li class="display-5 my-2">Display 5</li>
+                </ul>
+                <ul class="bg-light">
+                  <li class="d-flex justify-content-end mb-2">
+                    <a href="#!" class="copy p-2"><i class="far fa-clone  text-secondary"></i><i class="fas fa-check d-none p-1"></i></a>
+                  </li>
+                  <pre
+                    class="language-html"
+                  ><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>display-1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Display 1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>display-2<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Display 2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>display-3<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Display 3<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>display-4<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Display 4<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>display-5<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Display 5<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">&gt;</span></span></code></pre>
+                </ul>
+              </div>
+              <p class="mt-3">
+                Make a paragraph stand out by adding
+                <span class="badge bg-light text-danger rounded-pill"
+                  >.lead</span
+                >:
+              </p>
+              <div class="text-color border border-3 rounded border-light">
+                <ul>
+                  <li class="lead">
+                    Vivamus sagittis lacus vel augue laoreet rutrum faucibus
+                    dolor auctor. Duis mollis, est non commodo luctus.
+                  </li>
+                </ul>
+                <ul class="bg-light">
+                  <li class="d-flex justify-content-end mb-2">
+                    <a href="#!" class="copy p-2"><i class="far fa-clone  text-secondary"></i><i class="fas fa-check d-none p-1"></i></a>
+                  </li>
+                  <pre
+                    class="language-html"
+                  ><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>lead<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                    Duis mollis, est non commodo luctus.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></code></pre>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card mt-3 border-0">
+            <div class="card-header bg-white p-3">
+              <h3 class="text-dark fs-5">Font Weight</h3>
+            </div>
+            <div class="card-body p-3">
+              <p>
+                Use
+                <span class="text-danger me-1"
+                  >.font-weight-{lighter|light|normal|bold|bolder|boldest}</span
+                >
+                classes to set font weight.
+              </p>
+              <div class="text-color border border-3 rounded border-light">
+                <ul>
+                  <li class="my-1 fw-light">Light Text</li>
+                  <li class="my-1 fw-lighter">Lighter Text</li>
+                  <li class="my-1 fw-normal">Normal Text</li>
+                  <li class="my-1 fw-bold">Bold Text</li>
+                  <li class="my-1 fw-bolder">Bolder Text</li>
+                </ul>
+                <ul class="bg-light">
+                  <li class="d-flex justify-content-end mb-2">
+                    <a href="#!" class="copy p-2"><i class="far fa-clone  text-secondary"></i><i class="fas fa-check d-none p-1"></i></a>
+                  </li>
+                  <pre class="language-html"><code class=" language-html">
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>fw-lighter<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Lighter Text<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>fw-light<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Light Text<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>fw-normal<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Normal Text<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>fw-bold<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Bold Text<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>fw-bolder<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Bolder Text<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>fw-boldest<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Boldest Text<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></code></pre>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+          <div class="card mt-3 border-0">
+            <div class="card-header bg-white p-3">
+              <h3 class="text-dark fs-5">General</h3>
+            </div>
+            <div class="card-body p-3">
+              <p>Styling for common inline HTML5 elements.</p>
+              <div class="text-color border border-3 rounded border-light">
+                <ul>
+                  <li class="my-1">
+                    <p>
+                      You can use the mark tag to <mark>example</mark> text.
+                    </p>
+                  </li>
+                  <li class="my-1">
+                    <p>
+                      <del
+                        >This line of text is meant to be treated as deleted
+                        text.</del
+                      >
+                    </p>
+                  </li>
+                  <li class="my-1">
+                    <p>
+                      <s
+                        >This line of text is meant to be treated as no longer
+                        accurate.</s
+                      >
+                    </p>
+                  </li>
+                  <li class="my-1">
+                    <p>
+                      <ins
+                        >This line of text is meant to be treated as an addition
+                        to the document.</ins
+                      >
+                    </p>
+                  </li>
+                  <li class="my-1">
+                    <p><u>This line of text will render as underlined</u></p>
+                  </li>
+                  <li class="my-1">
+                    <p>
+                      <small
+                        >This line of text is meant to be treated as fine
+                        print.</small
+                      >
+                    </p>
+                  </li>
+                  <li class="my-1">
+                    <p><strong>This line rendered as bold text.</strong></p>
+                  </li>
+                  <li class="my-1">
+                    <p><em>This line rendered as italicized text.</em></p>
+                  </li>
+                </ul>
+                <ul class="bg-light">
+                  <li class="d-flex justify-content-end mb-2">
+                    <a href="#!" class="copy p-2"><i class="far fa-clone  text-secondary"></i><i class="fas fa-check d-none p-1"></i></a>
+                  </li>
+                  <pre
+                    class="language-html"
+                  ><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>You can use the mark tag to <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>mark</span><span class="token punctuation">&gt;</span></span>example<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>mark</span><span class="token punctuation">&gt;</span></span> text.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>del</span><span class="token punctuation">&gt;</span></span>This line of text is meant to be treated as deleted text.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>del</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>s</span><span class="token punctuation">&gt;</span></span>This line of text is meant to be treated as no longer accurate.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>s</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ins</span><span class="token punctuation">&gt;</span></span>This line of text is meant to be treated as an addition to the document.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ins</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>u</span><span class="token punctuation">&gt;</span></span>This line of text will render as underlined<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>u</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>small</span><span class="token punctuation">&gt;</span></span>This line of text is meant to be treated as fine print.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>small</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>strong</span><span class="token punctuation">&gt;</span></span>This line rendered as bold text.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>strong</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>em</span><span class="token punctuation">&gt;</span></span>This line rendered as italicized text.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>em</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></code></pre>
+                </ul>
+              </div>
+              <p>Stylized implementation of HTML’s <abbr> element for abbreviations and acronyms to show the expanded version on hover.</p>
+              <div class="text-color border border-3 rounded border-light">
+                <ul>
+                 <li class="my-1"><p><abbr title="attribute">attr</abbr></p></li>
+                 <li class="my-1"><p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr></p></li>
+                </ul>
+                <ul class="bg-light">
+                  <li class="d-flex justify-content-end mb-2">
+                    <a href="#!" class="copy p-2"><i class="far fa-clone  text-secondary"></i><i class="fas fa-check d-none p-1"></i></a>
+                  </li>
+                  <pre class=" language-html"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>abbr</span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>attribute<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>attr<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>abbr</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>abbr</span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>HyperText Markup Language<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>initialism<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>HTML<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>abbr</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></code></pre>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card mt-3 border-0">
+            <div class="card-header bg-white p-3">
+              <h3 class="text-dark fs-5">Blockquotes</h3>
+            </div>
+            <div class="card-body p-3">
+              <p>For quoting blocks of content from another source within your document. Wrap <span class="text-danger">blockquote-class="blockquote"</span> around any HTML as the quote.</p>
+              <div class="text-color border border-3 rounded border-light">
+                <ul>
+                  <li class="my-1"><blockquote class="blockquote">
+    <p class="mb-0">Lorem ipsum dolor sit amet. Integer posuere erat a ante.</p>
+</blockquote></li>
+                </ul>
+                <ul class="bg-light">
+                  <li class="d-flex justify-content-end mb-2">
+                    <a href="#!" class="copy p-2"><i class="far fa-clone  text-secondary"></i><i class="fas fa-check d-none p-1"></i></a>
+                  </li>
+                  <pre class=" language-html"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>blockquote</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>blockquote<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>mb-0<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Lorem ipsum dolor sit amet. Integer posuere erat a ante.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>blockquote</span><span class="token punctuation">&gt;</span></span></code></pre>
+                </ul>
+              </div>
+              <p class="mt-2">Format for naming a source</p>
+              <div class="text-color border border-3 rounded border-light">
+                <ul>
+                 <li class="my-1">
+                  <blockquote class="blockquote">
+                      <p >Lorem ipsum dolor sit amet.</p>
+                      <footer class="blockquote-footer">Someone famous in
+                          <cite title="Source Title">Source Title</cite>
+                      </footer>
+                  </blockquote></li>
+               
+                </ul>
+                <ul class="bg-light">
+                  <li class="d-flex justify-content-end mb-2">
+                    <a href="#!" class="copy p-2"><i class="far fa-clone  text-secondary"></i><i class="fas fa-check d-none p-1"></i></a>
+                  </li>
+                  <pre class=" language-html"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>blockquote</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>blockquote<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name"></span><span class="token attr-value"><span class="token punctuation attr-equals"></span><span class="token punctuation"></span><span class="token punctuation"></span></span><span class="token punctuation">&gt;</span></span>Lorem ipsum dolor sit amet.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>footer</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>blockquote-footer<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Someone famous in
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>cite</span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Source Title<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Source Title<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>cite</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>footer</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>blockquote</span><span class="token punctuation">&gt;</span></span></code></pre>
+                </ul>
+              </div>
+              <p class="mt-2">Use <span class="text-danger">.text-center</span> to align blockquote to center.</p>
+              <div class="text-color border border-3 rounded border-light">
+                <ul>
+                 <li class="my-1">
+                 
+<blockquote class="blockquote text-center">
+  <p >Lorem ipsum dolor sit amet.</p>
+  <footer class="blockquote-footer">Someone famous in
+      <cite title="Source Title">Source Title</cite>
+  </footer>
+</blockquote></li>
+               
+                </ul>
+                <ul class="bg-light">
+                  <li class="d-flex justify-content-end mb-2">
+                    <a href="#!" class="copy p-2"><i class="far fa-clone  text-secondary"></i><i class="fas fa-check d-none p-1"></i></a>
+                  </li>
+                  <pre class=" language-html"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>blockquote</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>blockquote text-center<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>mb-0<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Lorem ipsum dolor sit amet.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>footer</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>blockquote-footer<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Someone famous in
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>cite</span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Source Title<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Source Title<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>cite</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>footer</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>blockquote</span><span class="token punctuation">&gt;</span></span></code></pre>
+                </ul>
+              </div>
+              <p class="mt-2">Use <span class="text-danger">.text-right</span> to align blockquote to center.</p>
+              <div class="text-color border border-3 rounded border-light">
+                <ul>
+                 <li class="my-1">
+                  <blockquote class="blockquote text-end">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <footer class="blockquote-footer">Someone famous in
+                        <cite title="Source Title">Source Title</cite>
+                    </footer>
+                </blockquote></li>
+               
+                </ul>
+                <ul class="bg-light">
+                  <li class="d-flex justify-content-end mb-2">
+                    <a href="#!" class="copy p-2"><i class="far fa-clone  text-secondary"></i><i class="fas fa-check d-none p-1"></i></a>
+                  </li>
+                  <pre class=" language-html"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>blockquote</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>blockquote text-end<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name"></span><span class="token attr-value"><span class="token punctuation attr-equals"></span><span class="token punctuation"></span><span class="token punctuation"></span></span><span class="token punctuation">&gt;</span></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>footer</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>blockquote-footer<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Someone famous in
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>cite</span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Source Title<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Source Title<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>cite</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>footer</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>blockquote</span><span class="token punctuation">&gt;</span></span></code></pre>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card mt-3 border-0">
+            <div class="card-header bg-white p-3">
+              <h3 class="text-dark fs-5">Lists</h3>
+            </div>
+            <div class="card-body p-3">
+              <p class="mt-3">Remove the default list-style and left margin on list items (immediate children only).</p>
+              <div class="text-color border border-3 rounded border-light">
+                <ul class="list-unstyled ps-3">
+                  <li>Lorem ipsum dolor sit amet</li>
+                  <li>Nulla volutpat aliquam velit
+                      <ul >
+                          <li style="list-style:outside">Phasellus iaculis neque</li>
+                          <li style="list-style:outside">Purus sodales ultricies</li>
+                      </ul>
+                  </li>
+                  <li>Aenean sit amet erat nunc</li>
+                  <li>Eget porttitor lorem</li>
+                </ul>
+                 <ul class="bg-light">
+                  <li class="d-flex justify-content-end mb-2">
+                    <a href="#!" class="copy p-2"><i class="far fa-clone  text-secondary"></i><i class="fas fa-check d-none p-1"></i></a>
+                  </li>
+                  <pre class=" language-html"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>list-unstyled<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Lorem ipsum dolor sit amet<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Nulla volutpat aliquam velit
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Phasellus iaculis neque<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Purus sodales ultricies<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Aenean sit amet erat nunc<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Eget porttitor lorem<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span></code></pre>
+                </ul>
+              </div>
+              <p class="mt-2">Remove bullets from lists and apply some light margin with a combination of two classes, <span class="text-danger">.list-inlineand .list-inline-item.</span></p>
+              <div class="text-color border border-3 rounded border-light">
+                <ul>
+                 <li class="my-1">
+                <ul class="list-inline">
+                  <li class="list-inline-item">Lorem ipsum</li>
+                  <li class="list-inline-item">Phasellus iaculis</li>
+                  <li class="list-inline-item">Nulla volutpat</li>
+                </ul></li>
+                </ul>
+                <ul class="bg-light">
+                  <li class="d-flex justify-content-end mb-2">
+                    <a href="#!" class="copy p-2"><i class="far fa-clone  text-secondary"></i><i class="fas fa-check d-none p-1 "></i></a>
+                  </li>
+                  <pre class=" language-html"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>list-inline<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>list-inline-item<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Lorem ipsum<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>list-inline-item<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Phasellus iaculis<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>list-inline-item<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Nulla volutpat<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+                  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span></code></pre>
+                </ul>
+              </div>    
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-white mt-3 pt-3">
+      <div class="d-lg-flex justify-content-between container">
+        <span class="d-flex fs-5"
+          ><p class="text-muted me-2">2021©</p>
+          <a href="#!" class="text-dark"> Keenthemes</a>
+        </span>
+        <span class="d-flex">
+          <a href="#!" class="text-muted me-4 fs-5">About</a>
+          <a href="#!" class="text-muted me-4 fs-5">Team</a>
+          <a href="#!" class="text-muted me-4 fs-5">Contact</a>
+        </span>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

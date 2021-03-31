@@ -1,0 +1,113 @@
+.symbol-badge {
+  margin: auto;
+  width: 60px;
+  height: 60px;
+  background-image: url(https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/users/150-3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  .symbol {
+    width: 10px;
+    height: 10px;
+    background-color: #0bb783;
+    border: 1px solid white;
+    position: absolute;
+    margin-top: 45px;
+    margin-left: 20px;
+    border-radius: 50%;
+    z-index: 10;
+  }
+}
+.badge {
+  color: #ffa800;
+  background-color: #fff4de;
+  border-radius: 5px;
+  align-self: center;
+}
+.icon-mother {
+  border-radius: 50%;
+  color: #3b5998;
+  background-color: rgba(59, 89, 152, 0.1);
+  border-color: transparent;
+  &:hover {
+    color: #fff;
+    background-color: #3b5998;
+    border-color: transparent;
+  }
+}
+.icon-mother-google {
+  &:hover {
+    color: #fff;
+    background-color: #dd4b39;
+    border-color: transparent;
+  }
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 14px;
+  padding-right: 14px;
+  border-radius: 50%;
+  color: #dd4b39;
+  background-color: rgba(221, 75, 57, 0.1);
+  border-color: transparent;
+}
+.icon-mother-twitter {
+  &:hover {
+    color: #fff;
+    background-color: #1da1f2;
+    border-color: transparent;
+  }
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 14px;
+  padding-right: 14px;
+  border-radius: 50%;
+  color: #1da1f2;
+  background-color: rgba(29, 161, 242, 0.1);
+  border-color: transparent;
+}
+.nav-p {
+  font-size: 16px;
+}
+.profile-ul {
+  .active-li {
+    color: #0bb783 !important;
+    background-color: #f3f6f9;
+    border-radius: 15px;
+    a {
+      color: #0bb783 !important;
+    }
+  }
+  li {
+    margin-top: 10px;
+    width: 220px;
+    a {
+      p {
+        font-weight: 500;
+      }
+      i {
+        font-size: 17px !important;
+      }
+      padding: 4px;
+      border-radius: 10px;
+      &:hover {
+        color: #0bb783 !important;
+        background-color: #f3f6f9;
+      }
+    }
+  }
+}
+.divider {
+  width: 2.5px;
+  height: 25px;
+  margin-top: 5px;
+  margin-bottom: 2px;
+  background: #0bb783;
+}
+.quic-action {
+  color: rgb(126, 119, 119);
+  &:hover {
+    color: #0bb783;
+    background-color: #d7f9ef;
+    transition: 0.2s;
+  }
+}

@@ -1,0 +1,352 @@
+.bg-header {
+  background: #181c32;
+}
+
+nav div {
+  min-height: 80px;
+}
+
+.a-icon:hover {
+  background: #6b6a6a;
+}
+.a-icon:hover i {
+  color: #e2dfdf !important;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 97;
+  height: 77px;
+}
+
+.nav-color {
+  color: #adb1c7 !important;
+}
+
+.creat-btn {
+  color: #fff;
+  background-color: #0bb783;
+  border-color: #0bb783;
+}
+
+.logo {
+  width: 100%;
+  max-width: 450px;
+}
+
+.nav-link {
+  color: #adb1c7 !important;
+}
+
+.divider {
+  height: 40px;
+  width: 0.1px;
+}
+
+.sec-1 h4,
+.sec-1 h2 {
+  cursor: pointer;
+}
+
+h4:hover {
+  color: #0bb783 !important;
+}
+h4::after {
+  color: #0bb783 !important;
+}
+
+.subheader {
+  overflow: scroll;
+  margin-top: 80px;
+}
+
+.subheader-span {
+  width: 220px;
+}
+
+body {
+  background: #cceef2;
+}
+body li {
+  list-style: none;
+}
+body a {
+  text-decoration: none;
+}
+
+.bg-light-success {
+  color: #0bb783;
+  background-color: #d7f9ef;
+}
+
+.progress {
+  width: 250px;
+  height: 10px;
+}
+
+.next-page,
+.previous-page {
+  color: #0bb783;
+  background-color: #d7f9ef !important;
+}
+
+.page-link {
+  background: #d7f9ef;
+  border-radius: 10px !important;
+  color: black !important;
+}
+.page-link:hover {
+  color: #fff !important;
+  background-color: #0bb783 !important;
+  border-color: #0bb783 !important;
+}
+
+.form-select {
+  color: #0bb783 !important;
+  font-weight: 500;
+  background-color: #d7f9ef !important;
+}
+
+.disabled {
+  background: #f8f8f8 !important;
+}
+
+.fw-50 {
+  font-weight: 500;
+}
+
+.lh-0 {
+  line-height: 0px;
+}
+
+.lh-min {
+  line-height: 3px;
+}
+
+.btn-main {
+  color: #0bb783;
+  background-color: #d7f9ef;
+  border-color: transparent;
+}
+
+.main-color {
+  color: #0bb783;
+}
+
+.main-bg {
+  background-color: #d7f9ef;
+}
+
+footer a:hover {
+  color: #0bb783 !important;
+}
+
+.font-2 {
+  font-size: 4px;
+}
+
+.font-3 {
+  font-size: 6px;
+}
+
+.font-4 {
+  font-size: 8px;
+}
+
+.font-5 {
+  font-size: 10px;
+}
+
+.font-6 {
+  font-size: 12px;
+}
+
+.font-7 {
+  font-size: 14px;
+}
+
+.font-8 {
+  font-size: 16px;
+}
+
+.font-9 {
+  font-size: 18px;
+}
+
+.font-10 {
+  font-size: 20px;
+}
+
+.font-11 {
+  font-size: 22px;
+}
+
+.font-12 {
+  font-size: 24px;
+}
+
+.font-13 {
+  font-size: 26px;
+}
+
+.font-14 {
+  font-size: 28px;
+}
+
+.font-15 {
+  font-size: 30px;
+}
+
+.font-16 {
+  font-size: 32px;
+}
+
+.font-17 {
+  font-size: 34px;
+}
+
+.font-18 {
+  font-size: 36px;
+}
+
+.font-19 {
+  font-size: 38px;
+}
+
+.font-20 {
+  font-size: 40px;
+}
+
+.font-21 {
+  font-size: 42px;
+}
+
+.font-22 {
+  font-size: 44px;
+}
+
+.font-23 {
+  font-size: 46px;
+}
+
+.font-24 {
+  font-size: 48px;
+}
+
+.font-25 {
+  font-size: 50px;
+}
+
+.font-26 {
+  font-size: 52px;
+}
+
+.font-27 {
+  font-size: 54px;
+}
+
+.font-28 {
+  font-size: 56px;
+}
+
+.font-29 {
+  font-size: 58px;
+}
+
+.font-30 {
+  font-size: 60px;
+}
+
+.font-31 {
+  font-size: 62px;
+}
+
+.font-32 {
+  font-size: 64px;
+}
+
+.font-33 {
+  font-size: 66px;
+}
+
+.font-34 {
+  font-size: 68px;
+}
+
+.font-35 {
+  font-size: 70px;
+}
+
+.font-36 {
+  font-size: 72px;
+}
+
+.font-37 {
+  font-size: 74px;
+}
+
+.font-38 {
+  font-size: 76px;
+}
+
+.font-39 {
+  font-size: 78px;
+}
+
+.font-40 {
+  font-size: 80px;
+}
+
+.chart .card-header .chart-header a {
+  color: black;
+}
+.chart .card-header .chart-header a:hover {
+  color: #0bb783;
+}
+.chart .card-header .chart-header a:focus {
+  background: #0bb783;
+  color: white;
+}
+
+.quic-action:hover {
+  background-color: #d7f9ef;
+}
+.quic-action:hover i {
+  color: #0bb783 !important;
+}
+.quic-action:focus {
+  background-color: #d7f9ef;
+}
+.quic-action:focus i {
+  color: #0bb783 !important;
+}
+
+.slide-card .card-header span {
+  margin-top: -12px;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  color: #0bb783 !important;
+  background-color: #d7f9ef !important;
+}
+.slide-card .card-header ul li {
+  margin: 0 3px;
+}
+.slide-card .card-header ul li a {
+  color: #7e8299;
+  background-color: #f3f6f9;
+  border-color: #f3f6f9;
+  padding-right: 10px !important;
+  border-radius: 8px;
+  font-size: 12px;
+}
+.slide-card .card-header ul li a:hover {
+  color: #7e8299;
+  background-color: #e4e6ef;
+  border-color: #e4e6ef;
+}
+
+/*# sourceMappingURL=app-profile.css.map */
